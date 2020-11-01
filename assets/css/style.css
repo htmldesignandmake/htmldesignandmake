@@ -2287,14 +2287,14 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #ffffff;
 }
 .slider-text-info h1 span {
-  font-size: 60px;
+  font-size: 90px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .slider-text-info h1 {
-    font-size: 90px;
+    font-size: 50px;
   }
   .slider-text-info h1 span {
-    font-size: 50px;
+    font-size: 90px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -5324,4 +5324,11 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 .search-error-wrapper .home-bacck-button:hover {
   background: #333;
+}
+.singleSlide{
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+}
+li.active {
+  color: #ff5951;
 }
