@@ -32,7 +32,7 @@
                 <div class="logo-area">
                   <a href="index.html"
                     ><img
-                      src="http://www.gzcc.edu.cn/upload/images/2018/1/%E7%BD%91%E7%AB%99LOL.png"
+                      src="./images/images/logo.png"
                       style="
                         width: 140px;
                         padding: 5px;
@@ -126,10 +126,16 @@
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <p>课程教案</p>
+              <p>课程教案与课件</p>
               <el-divider></el-divider>
-              <div style="display:flex;flex-direction: column;    align-items: baseline;">
-                <el-link :href="'./assets/kj/'+item.name" target="_blank" v-for="(item,index) in data" :key="index">{{item.name}}</el-link>
+              <div style="display: flex; flex-direction: column">
+                <el-link
+                  :href="'./assets/kj/'+item.name"
+                  target="_blank"
+                  v-for="(item,index) in data"
+                  :key="index"
+                  >{{item.name}}</el-link
+                >
               </div>
             </div>
           </div>
@@ -196,15 +202,15 @@
           },
           visible: false,
           data: [
-            {name:'《网页设计与制作》课程教案.doc'},
-            {name:'第一章.pptx'},
-            {name:'第二章.pptx'},
-            {name:'第三章.pptx'},
-            {name:'第四章.pptx'},
-            {name:'第五章.pptx'},
-            {name:'第六章.pptx'},
-            {name:'第七章.pptx'},
-            {name:'第八章.pptx'},
+            { name: '《网页设计与制作》课程教案.doc' },
+            { name: '第一章.pptx' },
+            { name: '第二章.pptx' },
+            { name: '第三章.pptx' },
+            { name: '第四章.pptx' },
+            { name: '第五章.pptx' },
+            { name: '第六章.pptx' },
+            { name: '第七章.pptx' },
+            { name: '第八章.pptx' },
           ],
         },
         methods: {
