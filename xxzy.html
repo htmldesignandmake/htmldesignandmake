@@ -126,14 +126,10 @@
           </div>
           <div class="row">
             <div class="col-lg-12">
-              <p>1.123123</p>
+              <p>课程教案</p>
               <el-divider></el-divider>
               <div style="display:flex;flex-direction: column;    align-items: baseline;">
-                <el-link>有下划线.word</el-link>
-                <el-link>有下划线</el-link>
-                <el-link>有下划线</el-link>
-                <el-link>有下划线</el-link>
-                <el-link>有下划线</el-link>
+                <el-link :href="'./assets/kj/'+item.name" target="_blank" v-for="(item,index) in data" :key="index">{{item.name}}</el-link>
               </div>
             </div>
           </div>
@@ -200,61 +196,15 @@
           },
           visible: false,
           data: [
-            {
-              label: '一级 1',
-              children: [
-                {
-                  label: '二级 1-1',
-                  children: [
-                    {
-                      label: '三级 1-1-1',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              label: '一级 2',
-              children: [
-                {
-                  label: '二级 2-1',
-                  children: [
-                    {
-                      label: '三级 2-1-1',
-                    },
-                  ],
-                },
-                {
-                  label: '二级 2-2',
-                  children: [
-                    {
-                      label: '三级 2-2-1',
-                    },
-                  ],
-                },
-              ],
-            },
-            {
-              label: '一级 3',
-              children: [
-                {
-                  label: '二级 3-1',
-                  children: [
-                    {
-                      label: '三级 3-1-1',
-                    },
-                  ],
-                },
-                {
-                  label: '二级 3-2',
-                  children: [
-                    {
-                      label: '三级 3-2-1',
-                    },
-                  ],
-                },
-              ],
-            },
+            {name:'《网页设计与制作》课程教案.doc'},
+            {name:'第一章.pptx'},
+            {name:'第二章.pptx'},
+            {name:'第三章.pptx'},
+            {name:'第四章.pptx'},
+            {name:'第五章.pptx'},
+            {name:'第六章.pptx'},
+            {name:'第七章.pptx'},
+            {name:'第八章.pptx'},
           ],
         },
         methods: {

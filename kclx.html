@@ -12,10 +12,7 @@
       type="image/x-icon"
       href="assets/images/favicon.ico"
     />
-    <link
-      rel="stylesheet"
-      href="assets/css/index.css"
-    />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
@@ -54,7 +51,7 @@
                   <div class="main-menu">
                     <nav class="main-navigation">
                       <ul>
-                        <li >
+                        <li>
                           <a href="index.html"> 主页</a>
                         </li>
                         <li><a href="wjzp.html">往届作品</a></li>
@@ -119,8 +116,7 @@
       </div>
       <!-- Hero Slider end -->
       <!-- Our Course Categories Area -->
-     
-    
+
       <!--// Most Popular Courses Area -->
       <!-- Free Introductory Seminar -->
       <!--// Free Introductory Seminar -->
@@ -132,7 +128,7 @@
             <!-- section-title -->
             <div class="section-title-two">
               <h4 id="kclx">学习资源-课程录像</h4>
-              <h3>News About Education</h3>
+              <h3>在线观看</h3>
             </div>
             <!--// section-title -->
           </div>
@@ -145,7 +141,7 @@
               <div class="single-our-blog mt--30">
                 <div class="our-blog-image">
                   <a @click="open(item)"
-                    ><img src="assets/images/blog/blog-image-01.jpg" alt=""
+                    ><img :src="item.p" alt=""
                   /></a>
                   <span class="in-our-blog-icon">
                     <img src="assets/images/icon/our-blog-01.png" alt="" />
@@ -158,10 +154,10 @@
                       <li>
                         <p>录制: <a href="#">网页设计</a></p>
                       </li>
-                      <li><p>观看量：1</p></li>
+                      <li><p>观看量：{{(Math.random(10)*100).toFixed(0)}}</p></li>
                     </ul>
                   </div>
-                  <p>简介撒大三大四的。。。。。</p>
+                   <!--<p>简介撒大三大四的。。。。。</p>-->
                   <div class="button-block">
                     <a @click="open(item)" class="botton-border">播放</a>
                   </div>
@@ -181,12 +177,17 @@
       <!-- Testimonials Area -->
 
       <!--// Testimonials Area -->
-      <el-dialog width="80%" :visible.sync="visible" :title="video.url" @close="close">
+      <el-dialog
+        width="80%"
+        :visible.sync="visible"
+        :title="video.url"
+        @close="close"
+      >
         <video
           controls
           style="width: 100%; height: 100%"
           v-if="video.url"
-          :src="'./assets/video/'+video.url+'.mp4'"
+          :src="video.text"
         ></video>
       </el-dialog>
       <!-- Footer Area -->
@@ -236,6 +237,7 @@
           video: {
             text: '',
             url: '',
+            p: '',
           },
           visible: false,
           production: [
@@ -284,24 +286,144 @@
             '特色创新-改进方向途径',
           ],
           videos: [
-            { text: '', url: 'DOM HTML' },
-            { text: '', url: 'JavaScript对象' },
-            { text: '', url: '引入JavaScript' },
-            { text: '', url: 'DOM事件' },
-            { text: '', url: 'CSS样式修改' },
-            { text: '', url: 'switch语句' },
-            { text: '', url: '函数声明及调用' },
-            { text: '', url: 'js的输出' },
-            { text: '', url: 'html图像元素' },
-            { text: '', url: '表格布局页面案例' },
-            { text: '', url: '表单与表格案例' },
-            { text: '', url: '编辑器的使用' },
-            { text: '', url: 'html文字相关元素' },
-            { text: '', url: '修补工具' },
-            { text: '', url: '渐变工具' },
-            { text: '', url: '切片工具' },
-            { text: '', url: '用户界面和工具箱' },
-            { text: '', url: 'Photoshop概述' },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2aca35285890809286976909/v.f100020.mp4',
+              url: 'DOM HTML',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2aca35285890809286976909/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f313a05285890809286977077/v.f100020.mp4',
+              url: 'JavaScript对象',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f313a05285890809286977077/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31b775285890809286977221/v.f100020.mp4',
+              url: '引入JavaScript',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31b775285890809286977221/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31c665285890809286977299/v.f100020.mp4',
+              url: 'DOM事件',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31c665285890809286977299/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f323bf5285890809286977409/v.f100020.mp4',
+              url: 'CSS样式修改',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f323bf5285890809286977409/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f328de5285890809286977570/v.f100020.mp4',
+              url: 'switch语句',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f328de5285890809286977570/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633bcdb15285890809272243666/v.f100020.mp4',
+              url: '函数声明及调用',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633bcdb15285890809272243666/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633c4c875285890809272244304/v.f100020.mp4',
+              url: 'js的输出',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633c4c875285890809272244304/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2a4de5285890809286976760/v.f100020.mp4',
+              url: 'html图像元素',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2a4de5285890809286976760/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/v.f100020.mp4',
+              url: '表格布局页面案例',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/v.f100020.mp4',
+              url: '表单与表格案例',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27045285890809272242006/v.f100020.mp4',
+              url: '编辑器的使用',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27045285890809272242006/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27425285890809272242022/v.f100020.mp4',
+              url: 'html文字相关元素',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27425285890809272242022/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b280d5285890809272242087/v.f100020.mp4',
+              url: '修补工具',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b280d5285890809272242087/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b475285890809272242108/v.f100020.mp4',
+              url: '渐变工具',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b475285890809272242108/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b685285890809272242118/v.f100020.mp4',
+              url: '切片工具',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b685285890809272242118/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b8a5285890809272242129/v.f100020.mp4',
+              url: '用户界面和工具箱',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b8a5285890809272242129/coverBySnapshot_10_0.jpg',
+            },
+            {
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2bc65285890809272242143/v.f100020.mp4',
+              url: 'Photoshop概述',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2bc65285890809272242143/coverBySnapshot_10_0.jpg',
+            },{
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118765285890809324828826/v.f100020.mp4',
+              url: 'yesea.cn域名设计',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118765285890809324828826/coverBySnapshot_10_0.jpg',
+            },{
+              text:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118525285890809324828813/v.f100020.mp4',
+              url: '域名设计',
+              p:
+                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118525285890809324828813/coverBySnapshot_10_0.jpg',
+            },
           ],
         },
         methods: {
