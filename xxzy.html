@@ -54,11 +54,11 @@
                         <li>
                           <a href="index.html"> 主页</a>
                         </li>
-                        <li class="active"><a href="wjzp.html">往届作品</a></li>
+                        <li><a href="wjzp.html">往届作品</a></li>
                         <li>
                           <a href="kclx.html">课程录像</a>
                         </li>
-                        <li>
+                        <li class="active">
                           <a href="xxzy.html">学习资源</a>
                         </li>
                       </ul>
@@ -119,30 +119,21 @@
           <div class="row" style="margin-top: 20px; padding-top: 40px">
             <div class="col-lg-8 ml-auto mr-auto">
               <div class="section-title-two">
-                <h4 id="wjzp">往届学生服务企业</h4>
-                <h3>精彩案例</h3>
+                <h4 id="wjzp">学习资源</h4>
+                <h3>下载中心</h3>
               </div>
             </div>
           </div>
           <div class="row">
-            <div
-              class="col-lg-3 col-md-4 col-6"
-              v-for="(item,index) in production"
-            >
-              <div class="single-popular-courses mt--30">
-                <div class="popular-courses-contnet">
-                  <h5>{{item.text}}</h5>
-                  <div class="post_meta">
-                    <ul>
-                      <li><p>阅读数: 23</p></li>
-                    </ul>
-                  </div>
-                  <div class="button-block">
-                    <a :href="item.url" target="_blank" class="botton-border"
-                      >查看</a
-                    >
-                  </div>
-                </div>
+            <div class="col-lg-12">
+              <p>1.123123</p>
+              <el-divider></el-divider>
+              <div style="display:flex;flex-direction: column;    align-items: baseline;">
+                <el-link>有下划线.word</el-link>
+                <el-link>有下划线</el-link>
+                <el-link>有下划线</el-link>
+                <el-link>有下划线</el-link>
+                <el-link>有下划线</el-link>
               </div>
             </div>
           </div>
@@ -203,71 +194,67 @@
             text: '',
             url: '',
           },
+          defaultProps: {
+            children: 'children',
+            label: 'label',
+          },
           visible: false,
-          production: [
+          data: [
             {
-              text: '贵州黄果树扶梯有限公司',
-              url: 'http://www.gycc.net/jkx/hgs/index.html',
+              label: '一级 1',
+              children: [
+                {
+                  label: '二级 1-1',
+                  children: [
+                    {
+                      label: '三级 1-1-1',
+                    },
+                  ],
+                },
+              ],
             },
-            { text: '贵州文史馆', url: 'http://www.gzwsg.cn/' },
-            { text: '计算机应用基础精品课程', url: '' },
-            { text: '贵州国合对外劳务有限公司', url: '' },
-            { text: '贵州商专网上实习商城', url: '' },
-            { text: '贵州贞丰之风', url: '' },
-            { text: '贵州德一茶苑网站', url: '' },
-            { text: '贵州商专计科系简历系统', url: '' },
-            { text: '贵州商专社科部网站', url: '' },
-            { text: '宏基笔记本电脑贵州公司', url: '' },
-            { text: '贵州商专思政网模板', url: '' },
-            { text: '贵州商专学生工作网模板', url: '' },
-            { text: '贵州商专 网络08-1班网站', url: '' },
-            { text: '贵州肇兴旅游', url: '' },
-            { text: '织金大自然特产贸易有限公司', url: '' },
-            { text: '贵阳闽阳电脑销售店', url: '' },
-            { text: '贵州伊通网', url: '' },
-          ],
-          contents: [
-            '课程设置-性质作用',
-            '课程设置-理念思路',
-            '教学内容-针对性实用性',
-            '教学内容-内容组织安排',
-            '教学内容-具体表现形式',
-            '方法手段-教学设计创新',
-            '方法手段-多种方法运用',
-            '方法手段-现代技术手段',
-            '方法手段-网络资源环境',
-            '实践条件-实训设备环境',
-            '实践条件-实习基地建设利用',
-            '教学效果-社会评价',
-            '教学效果-社会评价',
-            '教学效果-社会认可度',
-            '特色创新-课程特色创新',
-            '特色创新-同类课程比较',
-            '特色创新-改进方向途径',
-            '特色创新-改进方向途径',
-            '特色创新-改进方向途径',
-            '特色创新-改进方向途径',
-            '特色创新-改进方向途径',
-          ],
-          videos: [
-            { text: '', url: 'DOM HTML' },
-            { text: '', url: 'JavaScript对象' },
-            { text: '', url: '引入JavaScript' },
-            { text: '', url: 'DOM事件' },
-            { text: '', url: 'CSS样式修改' },
-            { text: '', url: 'switch语句' },
-            { text: '', url: '函数声明及调用' },
-            { text: '', url: 'js的输出' },
-            { text: '', url: 'html图像元素' },
-            { text: '', url: '表格布局页面案例' },
-            { text: '', url: '表单与表格案例' },
-            { text: '', url: '编辑器的使用' },
-            { text: '', url: 'html文字相关元素' },
-            { text: '', url: '修补工具' },
-            { text: '', url: '渐变工具' },
-            { text: '', url: '切片工具' },
-            { text: '', url: '用户界面和工具箱' },
-            { text: '', url: 'Photoshop概述' },
+            {
+              label: '一级 2',
+              children: [
+                {
+                  label: '二级 2-1',
+                  children: [
+                    {
+                      label: '三级 2-1-1',
+                    },
+                  ],
+                },
+                {
+                  label: '二级 2-2',
+                  children: [
+                    {
+                      label: '三级 2-2-1',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              label: '一级 3',
+              children: [
+                {
+                  label: '二级 3-1',
+                  children: [
+                    {
+                      label: '三级 3-1-1',
+                    },
+                  ],
+                },
+                {
+                  label: '二级 3-2',
+                  children: [
+                    {
+                      label: '三级 3-2-1',
+                    },
+                  ],
+                },
+              ],
+            },
           ],
         },
         methods: {
@@ -277,6 +264,9 @@
           },
           close() {
             this.video = {}
+          },
+          handleNodeClick(data) {
+            console.log(data)
           },
         },
       })
