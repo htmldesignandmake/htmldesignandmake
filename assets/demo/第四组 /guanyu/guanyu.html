@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/erji.css" type="text/css"/>
+	</head>
+	<body>
+		<header>
+			<span class="logo">
+				聚和志远人力资源管理有限公司
+			</span>
+		<ul class="menu_ul">
+			<li class="menu_li"><a href="../index.html" id="shouye">首页</a></li>
+			<li class="menu_li" ><a href="../二级/二级、企业文化.html">企业文化</a></li>
+			<li class="menu_li menu_li_ys" ><a href="qiuzhi.html" id="qiuzhi">个人求职</a></li>
+			<li class="menu_li menu_li_ys" ><a href="zhaoping.html" id="zhaoping">企业招聘</a></li>
+			<li class="menu_li menu_li_ys" ><a href="../现场招聘.html">现场招聘</a></li>
+			<li class="menu_li menu_li_ys" ><a href="../校园招聘.html">校园招聘</a></li>
+			<li class="menu_li menu_li_ys" id="name" style="display: none;"><a id="dltc" href=""></a></li>
+		</ul>
+		</header>
+	<div class="nr">
+			<img src="img/banner.jpg" class="nr_img"/>
+			
+			<p class="menufont1">引领中国人力资本新发展</p>
+	</div>
+	
+	
+		<div class="sywz">
+		  <div class="dhleft">
+            <p>&nbsp;</p>
+		    <p><strong>相关导航</strong></p>
+		    <p><a href="guanyu.html" id="qiye">关于企业</a></p>
+		    <p><a href="zhaoxian.html" id="zhaoxian">招贤纳士</a></p>
+		    <p><a href="women.html" id="women">联系我们</a></p>
+		    <p><a href="about.html" id="jieshao">业务介绍</a></p>
+		    <p><img src="img/sy1.jpg" width="200" height="140"></p>
+		    <p>&nbsp;</p>
+	      </div>
+		  <div class="gyright">
+		    <p>&nbsp;</p>
+		    <p>您现在的位置：网站首页&gt;关于企业</p>
+		    <hr>
+		    <p>聚和志远人力资源管理有限公司（简称聚和人力）是经劳动和社会保障局、工商行政管理局批准登记成立的，注册资金为500万元的贵州人力资源公司,2018年8月16日在东莞市长安注册了豫贵劳务派遣有限公司，主要业务是企业用工签单和校企合作服务，公司现投资贵州铝业技术学校乌当分校和龙里邮电学校双龙校区在职校业务板块取得重大突破，以及社会工和农民工也开始批量操作，真正的实现人力资源劳务派遣多方位一条龙服务，公司覆盖范围东莞、贵州、云南、陕西、四川、湖南、广西、广东、黑龙江、重庆等地。是一家独特的人力资源服务机构，是以人力资源服务为核心的全方位、最专业的服务机构。公司秉着诚信为本，服务至上的原则，一切从客户的切身利益出发，致力于让客户在相同的时间内能够有更高的收入！公司是专注人力资源六年的中型企业，对于市场动向具有极其犀利的眼光，对于市场的一切变动都了解的非常透彻！作为专业从事人力资源研发、咨询与服务的公司，我们依托政府和劳动部门的支持，对人力资源市场供求关系和发展趋势进行系统分析和深入研究，凭借务实的管理风格，简化的工作流程,进行人力资源的综合开发和有效利用，为客户提供全面、专业的人力资源服务，解决企业用人的后顾之忧。融合国际先进的经营管理理念、管理方法与中国智略文化思想，形成了以人力资源开发为核心，向劳务派遣、招聘流程外包，信息咨询、培训和策划服务延展的六大模块的综合业务服务体系。公司的经营范围为职业介绍（凭许可证经营）、就业指导、劳务派遣（不含境外）、企业管理及投资咨询、商务信息咨询、人力资源管理及咨询、人事政策咨询、人才网络信息、人力资源开发、教育信息咨询、人才信息咨询服务、财务咨询、人才培训信息咨询、企业内训咨询服务、职业规划、企业营销策划、人才招聘会的组织承办。</p>
+		  </div>
+		</div>
+		<footer>
+			<div class="foot_div">
+			<ul>
+				<li>关于</li>
+				<li><a href="guanyu.html" id="guanyu">关于企业</a></li>
+				<li><a href="../二级/二级公司详情.html">企业详情</a></li>
+				<li><a href="zhaoxian.html" id="zxns">招贤纳士</a></li>
+				<li><a href="women.html" id="lianxi">联系我们</a></li>
+			</ul>
+			<ul>
+				<li><a href="about.html" id="yewu">业务介绍</a></li>
+				<li>公司软件</li>
+				<li>学习发展</li>
+				<li>人才发展</li>
+			</ul>
+			<ul>
+				<li>公司动态</li>
+				<li>前沿咨讯</li>
+				<li><a href="../二级/二级、合作案例.html">合作案例</a></li>
+				<li>公司动态</li>
+			</ul>
+			</div>
+		</footer>
+		<script language="javascript" type="text/javascript">
+			var namevalue=null;
+			namevalue=window.location.search.split("=")[1];
+			if(namevalue!=null&&namevalue!=""&&namevalue!=undefined){
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML=decodeURI(namevalue);
+				dltc .setAttribute("href", "../login.html");
+				document.getElementById("name").style.display='inline';
+				document.getElementById("shouye").setAttribute("href","../index.html?account="+decodeURI(namevalue));
+				document.getElementById("qiuzhi").setAttribute("href","qiuzhi.html?account="+decodeURI(namevalue));
+				document.getElementById("zhaoping").setAttribute("href","zhaoping.html?account="+decodeURI(namevalue));
+				document.getElementById("guanyu").setAttribute("href","guanyu.html?account="+decodeURI(namevalue));
+				document.getElementById("zxns").setAttribute("href","zhaoxian.html?account="+decodeURI(namevalue));
+				document.getElementById("lianxi").setAttribute("href","women.html?account="+decodeURI(namevalue));
+				document.getElementById("yewu").setAttribute("href","about.html?account="+decodeURI(namevalue));
+				document.getElementById("qiye").setAttribute("href","guanyu.html?account="+decodeURI(namevalue));
+				document.getElementById("zhaoxian").setAttribute("href","zhaoxian.html?account="+decodeURI(namevalue));
+				document.getElementById("women").setAttribute("href","women.html?account="+decodeURI(namevalue));
+				document.getElementById("jieshao").setAttribute("href","about.html?account="+decodeURI(namevalue));
+			}else{
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML="登录";
+				dltc .setAttribute("href", "../login.html");
+				document.getElementById("name").style.display='inline';
+			}
+		</script>
+	</body>
+</html>

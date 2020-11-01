@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="css/登录.css">
+	</head>
+	<body>
+	<div class="box">
+	<h1 style="text-align: center;font-size:50px ;font-family: '微软雅黑';color: aqua;">用户登入</h1>	
+	<form id="useForm">
+		<div class="cont">
+		<p>登入名</p><input id="username" type="text" name="username" />
+		</div>
+	    <div class="cont">
+	    	<p>密码</p><input id="password" type="password" name="password" />
+	    </div>
+	    <div class="cont">
+	    	<button id="test" type="button">提交</button>
+	    </div>
+	</form>
+	</div>	
+	</body>
+	<script>
+		var mockData = {
+			name:'lifa',
+			password:'123456',
+		};
+		document.getElementById('test').onclick = function(){
+			var name = document.querySelector('#username').value;
+			var password = document.querySelector('#password').value;
+			if (name == mockData.name && password == mockData.password){
+			window.location.href = '首页.html';
+		}else if(name == mockData.name && password != mockData.password){
+		 alert('密码错误');
+		}else{
+		alert('账户或密码错误');	}
+		};
+	</script>
+	</html>

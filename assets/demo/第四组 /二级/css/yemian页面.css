@@ -1,0 +1,33 @@
+*{
+				margin: 0px;padding: 0px;
+			}
+			.banner{background-image:url(../img/353.jpg);
+				width: 80%;height: 250px;
+				background-size: 100%100%;margin-left: auto;
+				margin: auto;background-color: lightslategray;
+			}
+			
+			.conten{
+				width: 80%;height: 45px;margin-left: 11%;
+				list-style: none;font-size: x-large;
+			}
+			.conten p{
+				display: none;color: aqua;font-size: 15px;
+			}
+			.conten:hover p{
+				display: block;color: blue; font-size:20px;
+			}
+			.main{font-family: "微软雅黑";position: absolute;
+			top:380px;left: 140px; right:140px;font-size: 20px;}
+			.man{
+				font-family: "微软雅黑";position: absolute;
+				top: 230px;left: 4px;font-size: 20px;
+			}
+			.lj{
+				position: absolute;top: 200px;left: 20px;
+			}
+			.lj a{
+				font-family: "微软雅黑";font-size: 20px;
+				text-decoration: none;opacity: 6;
+
+			}

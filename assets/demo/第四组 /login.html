@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+					*{
+						margin: 0;
+						padding: 0;
+					}
+					body{
+						background-image: url(img/t010db80d94b8392233.jpg);
+						background-repeat: no-repeat;
+						background-size: 100% 100%;
+						background-attachment: fixed;
+					}
+					.content{
+						width:100%;
+						margin-top: 10px;
+					}
+					.content p{
+						float:left;
+						width:50px;
+					}
+					.box{
+						border:2px solid rgb(22,72,121);
+						background: rgba(180,183,179,0.6);			
+						position:absolute;
+						top:33%;
+						left:35%;
+						width:30%;
+						height:25%;
+					}
+					.content input[type="text"],
+					.content input[type="password"]{
+						width:50%;
+						font-size:18px;
+						margin-left:16%;
+					}
+					.content input[type="button"]{
+						width:30%;
+						height:30px;
+						font-size:20px;
+						background-color:peachpuff;
+						margin-top:20px;
+						margin-left:34%;
+					}
+					.wjmm{
+						float: left;
+						text-decoration: none;
+						color: rgb(0,0,0);
+					}
+					.xyh{
+						float: right;
+						text-decoration: none;
+						color: rgb(0,0,0);
+					}
+					i{
+						font-size: 12px;
+					}
+					
+				</style>
+	</head>
+	<body onload=document.dl.account.focus()>
+		<form name="dl">
+			<div class="box">
+				<h1 style="padding-top: 15px;text-align:center;font-family：Microsoft yahei;font-size:45px;top:20px;">login</h1>
+				<div class="content">
+					<p>账号</p><input type="text"name="account" id="account"><i id="zh" style="display: none;">账号正确</i></div>
+				<div class="content">
+					<p>密码</p><input type="password"name="password" id="password"><i id="mm" style="display: none;">密码正确</i></div>
+				<div class="content"><input type="button"value="提交" id="login"></div>
+				<div class="content"><a href="#" class="wjmm">忘记密码?<a/><a href="personalRegister.html" class="xyh">新用户注册</a></div>
+			</div>
+		</form>
+		<script language="javascript" type="text/javascript">
+			var tj=document.getElementById("login");
+			var account=document.getElementById("account");
+			var password=document.getElementById("password");
+			var zh=document.getElementById("zh");
+			var mm=document.getElementById("mm");
+			account.onblur=function(){
+				var accountvalue=account.value;
+				if(accountvalue==""||accountvalue==null){
+					zh.innerHTML="请输入账号";
+					zh.style.color = 'red';
+					zh.style.display='inline';
+					return;
+				}else if(accountvalue=="123456"){
+					zh.innerHTML="账号输入正确";
+					zh.style.color = 'green';
+					zh.style.display='inline';
+					return;
+				}else{
+					zh.innerHTML="账号输入错误";
+					zh.style.color = 'red';
+					zh.style.display='inline';
+					return;
+				}
+			};
+			password.onblur=function(){
+				var passwordvalue=password.value;
+				if(passwordvalue==""||passwordvalue==null){
+					mm.innerHTML="请输入密码";
+					mm.style.color = 'red';
+					mm.style.display='inline';
+					return;
+				}else if(passwordvalue=="123456"){
+					mm.innerHTML="密码输入正确";
+					mm.style.color = 'green';
+					mm.style.display='inline';
+					return;
+				}else{
+					mm.innerHTML="密码输入错误";
+					mm.style.color = 'red';
+					mm.style.display='inline';
+					return;
+				}
+			};
+			tj.addEventListener("click",function(){		
+				var accountvalue=account.value;
+				var passwordvalue=password.value;
+				if(accountvalue==""||accountvalue==null){
+					zh.innerHTML="请输入账号";
+					zh.style.color = 'red';
+					zh.style.display='inline';
+					return;
+				}else if(accountvalue=="123456"){
+					zh.innerHTML="账号输入正确";
+					zh.style.color = 'green';
+					zh.style.display='inline';
+				}else{
+					zh.innerHTML="账号输入错误";
+					zh.style.color = 'red';
+					zh.style.display='inline';
+					return;
+				}
+				if(passwordvalue==""||passwordvalue==null){
+					mm.innerHTML="请输入密码";
+					mm.style.color = 'red';
+					mm.style.display='inline';
+					return;
+				}else if(passwordvalue=="123456"){
+					mm.innerHTML="密码输入正确";
+					mm.style.color = 'green';
+					mm.style.display='inline';
+				}else{
+					mm.innerHTML="密码输入错误";
+					mm.style.color = 'red';
+					mm.style.display='inline';
+					return;
+				}
+				window.open("index.html?account="+account.value);
+			})
+			account.onfocus=function(){
+				zh.style.display='none';
+			}
+			password.onfocus=function(){
+				mm.style.display='none';
+			}
+			
+		</script>
+	</body>
+<html>

@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.bg{
+	width: 1366px;
+	height: 602px;
+	background-color: #fdd707;
+}
+.redmoney img{
+	width: 200px;
+	height: 300px;
+	margin: 70px;
+	float: left;
+}
+.b{
+	height: 200px;
+	width: 1366px;
+	background-color: white;
+}
+.name p{
+	font-family: 胡敬礼毛笔行书简;
+	font-size: 100px;
+	text-align: center;
+}
+.ma{
+	width: 683px;
+	float: left;
+}
+.mama{
+	width: 683px;
+	float: left;
+}
+.ma img{
+	width: 200px;
+	height: 200px;
+	padding-left: 483px;
+	float: left;
+}
+.mama img{
+	width: 100px;
+	height: 100px;
+	float: right;
+	padding-right:483px;
+	padding-top: 40px;
+}
+
+.di{
+	padding-top: 100px;
+	height: 200px;
+	width: 1366px;
+	background-color: grey;
+	text-align: center;
+}

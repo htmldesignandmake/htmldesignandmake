@@ -1,0 +1,24 @@
+.boxx{width: 1366px;height: 768px;margin-left: 10px;}
+			.nav{width:1366px;height:35px;}
+			.nav>ul>li:hover{color:darkseagreen;}
+			.nav>ul>li{font-size: 32px;color:white;list-style: none;width:50%;float: left;}
+			.hou li{list-style: none;}
+			.hou a{text-decoration: none;color:white;}
+			.hou{display: none;}
+			.nav>ul>li:hover .hou{display: block;font-size:15px;}
+			.mian li{list-style: none;}
+			.mian a{text-decoration: none;color:white;}
+			.mian{display: none;}
+			.nav>ul>li:hover .mian{display: block;font-size: 15px;}
+			.ss h3{color:white;text-align: center;position:absolute;margin-left:10px;top:50px;border: 2px solid red;}
+			.box{width: 1366px;height: 300px;position: absolute;top:100px;
+			border: 2px solid white;margin-left: 10px;
+			}
+			.aa h3{color: white;position: absolute;top: 100px;margin-left: 550px;}
+			.aa a{text-decoration:none;color:red;border: 2px solid red;position:absolute;top:270px;right: 3px;}
+			.dd h3{color:white;text-align: center;position:absolute;margin-left:10px;top:400px;border: 2px solid red;}
+			.box1{width: 1366px;height: 300px;position: absolute;top:450px;
+			border: 2px solid white;margin-left: 10px;
+			}
+			.hh h3{color:white;position: absolute;top: 100px;margin-left: 550px;}
+			.hh a{text-decoration:none;color:red;border: 2px solid red;position:absolute;top:270px;right: 3px;}

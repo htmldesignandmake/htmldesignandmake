@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>法规政策</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			    box-sizing: border-box;
+				
+			}
+			a{
+				font-family: "微软雅黑";
+				color: black;
+			}
+			body{
+				/*background: url(img3/15.png);*/
+				background-size: 100% 100%;
+			}
+			.max{
+				width:800px ;
+				margin:auto ;
+				border:2px solid  #aac;
+			}
+			.var{
+				float: left;
+				width: 100%;
+				height: 300px;
+				/*background:url(img3/1544770267274.jpg);*/
+				background-size: 100% 100%;
+			}
+			.var p{
+				font-size: 20px;
+				line-height: 65px;
+			}
+			li{
+				list-style:none ;
+			}
+			
+			li a{text-decoration:none ;}
+			
+			ul .s1>li ul{
+				float:none ;
+			}			
+			ul .s2>li ul{
+				float:none ;
+			}
+			.f{
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5px;
+			}	
+			.fi{
+				width: 90%;
+				margin: 5px auto 0 auto;
+			}
+			
+			.box{
+				width: 10%;
+				height: 40px;
+				border-style: solid;
+				border-width: 2px;
+				border-color: darkgray;
+				position:absolute;
+				margin-top: 400px;
+				margin-left: 70px;
+				font-size: 30px;
+				line-height: 40px;
+				box-shadow: #000000 5px 5px 5px;
+			}
+			.shu{
+				float: left;
+			}
+			.xiangguan{
+				margin-top: 30px;
+				float: left;
+			}
+.din{
+	width: 100%;
+	height: 55px;
+	background-color: #1179ef;
+}
+.tu{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-image: url(img/7.png);
+	background-size: 100% 100%;
+    margin-left: 70px;
+}
+.wen{
+	float: left;
+	line-height: 55px;
+	width: 30%;
+	height: 26px;
+	font-family: 宋体;
+}
+.wen p{
+	font-family: "宋体";
+	font-size: 26px;
+}
+.lj{
+	width: 15%;
+	position: absolute;
+	margin-top: -45px;
+	margin-left: 80%;
+}
+.lj  li{
+	font-family: "宋体";
+	font-size: 25px;
+}
+li{
+	transition: all 0.5s ease-in-out;
+}
+li:hover{
+	background-color: gainsboro;
+	
+}
+.sanjiao{
+	display: inline-block;
+	border-width: 5px;
+	border-style: solid;
+	border-color: white transparent transparent transparent ;
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 50px;
+}
+.van{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	margin-top: 11px;
+	display: none;
+}
+.lj li:hover .van{
+	display: block;
+}
+.van li{
+	border-bottom-style: double;
+}
+.lo{
+	float: left;
+	width: 30%;
+	height: 400px;
+	background-image: url(img/z0.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.nr{
+	float: right;
+	width: 65%;
+	height: 1370px;
+	margin-top: 20px;
+	
+}
+.box{
+	margin-top: 20px;
+	width: 100%;
+	height: 235px;
+}
+img{
+	float: left;
+	width: 30%;
+	height: 230px;
+	/*margin-top: 20px;*/
+}
+.jsw{
+	float: right;
+	width: 65%;
+	/*margin-top: 20px;*/
+	margin-left: 20px;
+	height: 230px;
+	line-height: 30px;
+}
+.dq{
+	clear: left;
+	float: left;
+	width: 30%;
+	height: 25px;
+	background-color: #87CEEB;
+	line-height: 25px;
+	font-family: "微软雅黑";
+}
+.box2{
+	width: 80%;
+	height: 300px;
+	/*background-color: darkblue;*/
+	margin: 30px 10% 0 10%;
+}
+.x1{
+	width: 50%;
+	height: 250px;
+	float: left;
+}
+.x2{
+	width: 50%;
+	height: 250px;
+	float: right;
+}
+.foot{
+	clear: right;
+				width: 80%;
+				height: 100px;
+				margin: 20px 10% 0 10% ;
+				border-width: 2px;
+				border-style: outset;
+				border-color:#90EE90 ;
+				line-height: 25px;
+				/*margin-top: 100px;*/
+			}
+.var{
+	position: fixed;
+    margin-top: 110px;
+	height: 400px;
+	width: 7%;
+	font-family: "微软雅黑";
+	font-size: 15px;
+    color: black;
+    margin-left: 10px;
+}
+.ss li {
+		
+				font-family: "楷体";
+				font-size: 15px;
+				text-align: center;
+				
+				list-style: none;
+				border: 4px solid dodgerblue;
+				border-left-color: aliceblue;
+				border-top-color: gainsboro;
+				border-bottom-color: gainsboro;
+				border-right-color: aliceblue;
+				width: 100%;
+			}
+			
+.ss a {
+				font-family: "微软雅黑";
+				color: #696969;
+				align-content: center;
+			}
+.ss{
+	display: none;
+	position:absolute;
+	margin-left: 21px;
+	margin-top: 3px;
+}
+.var ul:hover ul{
+	display: block;
+}
+.span{
+	display: inline-block;
+	border-width: 6px;
+	border-style: solid;
+	border-color: black transparent transparent transparent ;
+	position: fixed;
+	margin-left: 7px;
+	margin-top: 10px;
+}
+		</style>
+	</head>
+	<body>
+		<div class="din">
+			<div class="tu"></div>
+			<div class="wen"><p>中国华西工程设计建设有限公司</p></div>
+		</div>
+		<div class="var">
+			<ul>
+				<li style="font-family: '微软雅黑';"><b>导航菜单</b><span class="span"></span>
+					<ul class="ss">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="公司介绍.html">公司介绍</a>
+						</li>
+						<li>
+							<a href="业务领域.html">业务领域</a>
+						</li>
+						<li>
+							<a href="项目演示。html">项目演示</a>
+						</li>
+						<li>
+							<a href="质量管理.html">质量管理</a>
+						</li>
+						<li>
+							<a href="政策法规.html">政策法规</a>
+						</li>
+						<li>
+							<a href="新签项目.html">新签项目</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="lj">
+				<ul>
+					<li>
+						<a href="">友&nbsp;情&nbsp;&nbsp;链&nbsp;接</a><span class="sanjiao"></span>
+						<ul class="van">
+							<li>
+								<a href="http://www.coecg.com/">中国建设总局</a>
+							</li>
+							<li>
+								<a href="http://www.chinatax.gov.cn/">国家税务总局</a>
+							</li>
+							<li>
+								<a href="http://zjz.qhjt.gov.cn/">中国建设工程造价信息网</a>
+							</li>
+							<li>
+								<a href="http://www.js-china.org/"> 中国工程建设网</a>
+							</li>
+							<li>
+								<a href="http://www.sccin.com.cn/"> 四川建设网</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="lo"></div>
+		<div class="nr">
+			<div class="max" >
+			<h2 align="center">工程建设法律法规体系及其实施(了解)</h2>
+			<fieldset class="f">
+			<legend>(一)工程建设法律法规体系</legend>
+			<ul >
+				<li >
+					<ul class="s1">
+						<li>1.法律
+						<ul><p>
+							指由全国人大及其常委会通过并以国家主席令的形式发布的属于建设行政主管部门业务范围的各项法律，
+							它是建设法律体系的核心。
+						</p></ul>
+						</li>
+						<li>2.建设行政法规
+						<ul><p>
+						指国务院依法制定并以总理令的形式颁布的属于建设行政主管部门业务范围内的各项法规。
+						</p></ul>
+						</li>
+						
+						<li>3.建设部门规章
+						<ul><p>
+							指建设行政主管部门制定并以部长令的形式发布根据国务院规定的职责范围，
+							依法制定并颁布的各项规章，
+							或由建设行政主管部门与国务院有关部门联合制定并发布的规章。
+						</p></ul>
+						</li>
+						<li>4.地方性建设法规
+						<ul><p>
+							由省、自治区、直辖市人大及其常委会制定并发布的建设方面的法规。
+							包括省会(自治区首府)城市和经国务院批准的较大的市人大及其常委会制定的，
+							报经省、自治区人大或其常委会批准的各种法规。
+
+						</p></ul>
+						</li>
+						
+						<li>5.地方建设规章
+						<ul><p>
+						指省、自治区、直辖市以及省会城市和经国务院批准的较大城市的人民政府，
+						根据法律和国务院的行政法规制定并颁布的建设方面的规章。
+						</p></ul>
+						</li>
+					</ul>
+				</li>
+			</fieldset><br />
+				<hr />
+				<br />
+				<fieldset class="fi">
+					<legend>(二)工程建设法律法规的实施</legend>
+				<li>
+					<ul  class="s2">
+						<li>1.建筑许可(包括施工许可和从业资格两项内容) 
+						 <ul>
+						<li>(1)施工许可证的条件:
+						 	<ul>
+						 		<li>①已经办理该建筑工程用地批准手续。土地使用证。</li>
+								
+								<li>②在城市规划区的建筑工程，已经取得规划许可证。</li>
+								
+								<li>③需要拆迁的，其拆迁进度符合施工要求。不是全部。</li>
+								
+								<li>④已经确定建筑施工企业。注意前后顺序。</li>
+								
+								<li>⑤有施工图设计文件并已按规定进行了审查。</li>
+								
+								<li>⑥有保证工程质量和安全的具体措施，办理了工程质量、安全监督手续。</li>
+								
+								<li>⑦按照规定应该委托监理的工程已委托监理。</li>
+								
+								<li>⑧建设资金已经落实;建设工期不足1年的，到位资金原则上不得少于工程合同价的50%，建设工期超过1年的，到位资金原则上不得少于工程合同价的30%。
+									建设单位应当提供银行出具的到位资金证明。</li>
+								<li>⑨法律、行政法规规定的其他条件。</li>
+						 	</ul>
+						 	</li>
+						</ul>
+						</li>
+						<br />
+							<img src="img3/3.jpg" height="350px" width="650px">
+						<br />
+						<li>(2)从业资格的条件:
+						    <ul>
+						    	<li>①有符合国家规定的注册资本;  </li>
+			
+								<li>②有与其从事的建筑活动相适应的具有法定执业资格的专业技术人员;  </li>
+								
+								<li>③有从事相关建筑活动所应有的技术装备;  </li>
+								
+								<li>已完成的建筑工程业绩。  </li>
+						    </ul>
+					   </li>
+						<li>2.建筑工程发包与承包。
+						<ul>
+							<li>(1)发包
+							<p>
+								发包单位实行招标发包的，应当将建筑工程发包给依法中标的承包单位，实行直接发包的，
+								应发包给具有相应资质条件的承包单位。
+								建筑法提倡对建筑工程实行总承包，禁止将建筑工程肢解发包。
+							</p></li>
+							<li>(2)承包<p>								
+							禁止建筑施工企业超越本企业资质等级或者以他建筑施工企业的名义承揽工程。							
+							禁止建筑施工企业出借资质。							
+							禁止承包单位将其承包的全部建筑工程转包给他人或肢解以后以分包的名义转包给他人。							
+							允许两个以上的承包单位联合承包。应当按照资质等级低的单位的业务许可范围承揽工程。							
+							建筑工程总承包单位可以将承包工程中的部分工程发包给具有相应资质条件的分包单位。
+							施工总承包的，建筑工程主体结构的施工必须由总承包单位自行完成。							
+							注意总分包单位对建设工程的责任问题。
+							</p></li>
+						</ul>
+						</li>
+						<li>3.建筑工程监理。
+						<ul>
+							<li>(1)建筑工程监理范围:
+							<p>
+								<li>①国家重点建设工程。</li>	
+								<li>②大中型公用事业工程。</li>		
+								<li>③成片开发建设的住宅小区工程。</li>
+								<li>④利用外国政府或者国际组织贷款、援助资金的工程。</li>
+								<li>⑤国家规定必须实行监理的其他工程。</li>
+							</p>
+							</li>
+							<li>(2)建筑工程监理的有关规定:
+								<p>
+									实行监理的建筑工程，由建设单位委托具有相应资质条件的工程监理单位监理。
+									建设单位与其委托的工程监理单位应当订立书面委托监理合同。		
+									注意工程监理单位与那些单位不得有隶属关系或者其他厉害关系。
+								</p>
+							</li>
+						</ul>
+						</li>
+						<li>4.建筑安全生产管理。
+						<ul>
+							<li>建筑工程安全生产管理必须坚持安全第一、预防为主的方针。</li>
+						</ul>
+						</li>
+					</ul>
+				</li>
+				</fieldset>
+				<li><button><a href="index.html">返回首页</a></button></li>
+			</ul>
+		</div>
+		
+		</div>
+		<div class="dq"><b>当前位置：</b><a href="index.html">首页</a>  > 政策法规/div>
+		<div class="shuji">
+			<marquee>
+			<img src="img3/1544769108599.jpg" alt="" class="img1"/>
+			<img src="img3/1544769179569.jpg" alt=""class="img1" />
+			<img src="img3/1544769223566.jpg" alt="" class="img1"/>
+			<img src="img3/1544769345317.jpg" alt="" class="img1"/>
+			</marquee>
+		</div>
+		<div class="shu">
+			<a href="相关书籍.html">相关书籍</a>
+			<p>建设工程法律法规选编</p>
+			<p>工程法规政策标准相关法规政策摘编</p>
+			<p>建设工程监理法规文件汇编</p>
+			<p>建设工程法规及相关知识</p>
+			<p>建设工程法律管理条例</p>
+			<p>中华人民共和国建筑法</p>
+		</div>
+		<div class="xiangguan">
+			<p><b>相关链接</b></p>
+			<ul>
+				<li><a href="Level 3 page/工程招标.html">贵州省工程建设项目招标范围和规模标准规定</a></li>
+				<li><a href="Level 3 page/工程扶持.html">2018年贵州省装配式建筑扶持政策和补助标准</a></li>
+				<li><a href="Level 3 page/相关规定.html">建筑工程相关法律法规</a></li>
+				<li><a href="Level 3 page/质量管理.html">建设工程质量管理条例</a></li>
+			</ul>
+		</div>
+		</div>
+		<div style="clear:both"></div>
+		
+		<div class="foot">
+			<center>
+				COPYRIGHT © 中国华西工程设计建设有限公司 <br/> 蜀ICP备05026716号 网站技术支持：明腾-西部商务网<br/> 地址：中国.四川成都金牛区沙湾东二路1号智业世纪加州5楼 电话：028-87664010 传真：028-87669963<br/> 邮编：610031
+			</center>
+		</div>
+		
+	</body>
+</html>

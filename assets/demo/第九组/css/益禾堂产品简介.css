@@ -1,0 +1,333 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+.main{
+	width: 100%;
+	height: 350px;
+	background-color: aliceblue;
+}
+.main img{
+	width: 100%;
+	height: 300px;
+}
+.box{
+position: absolute;
+	width: 100%;
+	height: 400px;
+	float: left;
+	padding: 6.6%;
+	background-color:  aliceblue;
+}
+.box1{
+left: 50px;
+	position: absolute;
+	top: 20px;
+	width: 40%;
+	height: 400px;
+	background-color:  aliceblue;
+}
+.box1 img{
+	width: 90%;
+	height: 350px;
+}
+.box2{
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 700px;
+	width: 40%;
+	height: 400px;
+	background-color: azure;
+}
+.box2 img{
+	width: 90%;
+	height: 350px;
+	
+}
+.ming1{
+	width: 100%;
+	height: 50px;
+background-color: #000000;
+	position: absolute;
+	top: 800px;
+}
+.ming1 a{
+	color: burlywood;
+}
+
+
+.ming2{
+	width: 100%;
+	height: 50px;
+background-color: #000000;
+	position: absolute;
+	top: 1180px;
+}
+.ming2 a{
+	color: burlywood;
+}
+
+.ming3{
+	width: 100%;
+	height: 50px;
+background-color: #000000;
+	position: absolute;
+	top: 1530px;
+}
+.ming3 a{
+	color: burlywood;
+	}
+
+.ming4{
+	width: 100%;
+	height: 50px;
+background-color: #000000;
+	position: absolute;
+	top: 1895px;
+}
+.ming4 a{
+	color: burlywood;
+}
+.pc{
+	position: absolute;
+	top: 850px;
+	width: 100%;
+	hyphenate-character: 350px;
+	background-color:  aliceblue;
+}
+.pc img{ 
+	float: left;
+	width: 20%;
+    height: 300px;
+     padding: 2%;
+	
+}
+.nav{
+	position:absolute;
+	top: 1150px;
+	width: 100%;
+	height: 40px;
+	background-color:  aliceblue;
+	text-align: center;
+	float: left;
+}
+.nav a{
+	color: yellow;
+}
+.nav ul{ 
+	text-align: center;
+	width: 100%;
+}
+.nav li{
+	width: 25%;
+	height: 40px;
+	text-align: center;
+	list-style: none;
+	float: left;
+	}
+	
+	
+	
+	.ff{
+	position: absolute;
+	top: 1225px;
+	width: 100%;
+	height: 350px;
+	background-color:  aliceblue;
+	}
+	.ff img{
+		width: 20%;
+		height: 300px;
+		padding: 2%;
+		float: left;
+	}	
+	.nav2{
+		position: absolute;
+		top: 1500px;
+		width: 100%;
+		height: 40px;
+		background-color:  aliceblue;
+	}
+	.nav2 a{
+		color: yellow;
+	}
+	.nav2 ul{
+		width: 100%;
+	}
+	.nav2 li{
+		width: 25%;
+		height: 40px;
+		text-align: center;
+		list-style: none;
+		float: left
+	}
+
+
+
+
+
+.box3{
+	position: absolute;
+	top: 1580px;
+		width: 100%;
+		height: 350px;
+		background-color:  aliceblue;
+	}
+	.box3 a{
+		color: yellow;
+	}
+	.box3 img{
+		width: 20%;
+		height: 300px;
+		padding: 2%;
+		float: left;
+	}	
+	.box3s{
+		position: absolute;
+		top: 1858px;
+		width: 100%;
+		height: 40px;
+		background-color:  aliceblue;
+	}
+	.box3s a{
+		color: yellow;
+		}
+	.box3s ul{
+		width: 100%;
+	}
+	.box3s li{
+		width: 25%;
+		height: 40px;
+		text-align: center;
+		list-style: none;
+		float: left
+	}
+
+
+.box4{
+	position: absolute;
+	top: 1945px;
+		width: 100%;
+		height: 350px;
+		background-color:  aliceblue;
+	}
+	.box4 a{
+		color: yellow;
+	}
+	.box4 img{
+		width: 20%;
+		height: 300px;
+		padding: 2%;
+		float: left;
+	}
+	
+	
+		
+	.box4s{
+		position: absolute;
+		top: 313px;
+		width: 100%;
+		height: 40px;
+		background-color:  aliceblue;
+	}
+	.box4s a{
+		color: yellow;
+	}
+	.box4s ul{
+		width: 100%;
+	}
+	.box4s li{
+		width: 25%;
+		height: 40px;
+		text-align: center;
+		list-style: none;
+		float: left
+	}
+.mm{
+	position: absolute;
+	top: 350px;
+	width: 100%;
+	height: 330px;
+	background-color: aliceblue;
+}
+.mm img{
+width: 60%;
+height: 300px;
+margin-left: 5%;
+}
+
+
+.hero {
+				width: 100%;
+				margin:0 auto;
+				height: 130px;
+				float: left;
+				background-image:url(../img/beijing.jpg);
+				position: relative;
+				z-index: 99;
+			}
+			.one{
+				width:75%;
+				float: left;
+	            position: relative;
+	            margin-left: 45%;
+	            margin-top: 50px;
+	           }
+			.clear{
+				clear:both;
+				}
+			a{
+				text-decoration: none;
+				}
+			ul,li{
+				list-style: none;
+				}
+			.one>li{
+			float: left;
+			width:15%;
+			text-align: center;
+			background: #ACDEAF;
+			padding:10px 0;
+			font-size:16px;
+			transition: .4s;
+			}
+			.one>li a{
+				color:black;
+				}
+			.one>li:hover{
+				background: indianred;
+				display: block;
+				}
+		    .two{
+				display: none;
+				margin-top:10px;
+				}
+		    .one >li:hover .two{
+					display:block;
+					}
+            .two p{
+					padding:5px 0;
+				    transition: .4s;
+					cursor:pointer;
+					}
+			.two p:hover{
+				background: pink;
+				display:block;
+			}
+		  		}
+		
+			.two >li a{
+				color: black;
+				
+			}
+			.two>p a{
+				color: black;
+				}
+.box111{
+	width: 100%;
+	height: 1500px;}
+	.box12222{
+		width: 100%;
+		height: 130px;

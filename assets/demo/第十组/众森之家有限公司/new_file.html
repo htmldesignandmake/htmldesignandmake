@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<title>简单下拉菜单</title>
+<style>
+ul {
+    border: 0px solid blue;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.men1 {
+
+}
+.men1 li {
+    float: left;
+}
+.men2 {
+    display: none;
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.men2 li {
+    float: none;
+}
+ul li {
+    list-style: none;
+    font-family: 宋体;
+    font-size: 24px;
+    background: #6FC;
+    line-height: 50px;
+    margin-left: 2px;
+    width:100px;
+}
+ul li ul li{
+    margin-left: 0px;
+    padding-left:0px;
+}
+ul li:hover {
+    color: red;
+    font-size: 24px;
+    cursor: pointer;
+}
+ul li:hover .men2 {
+    display: block;
+}
+.div1 {
+    width: 500px;
+    height: 200px;
+    background: #666;
+}
+.div2 {
+    width: 500px;
+    height: 50px;
+}
+</style>
+</head>
+<body>
+<div class="div2">
+  <ul class="men1">
+    <li>栏目一
+      <ul class="men2">
+        <li><a href="#">1</a></li>
+        <li><a href="#">1</a></li>
+      </ul>
+    </li>
+    <li>栏目二
+      <ul class="men2">
+        <li><a href="#">1</a></li>
+        <li><a href="#">1</a></li>
+      </ul>
+    </li>
+    <li>栏目三
+      <ul class="men2">
+        <li><a href="#">1</a></li>
+        <li><a href="#">1</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="div1"> 111111111111111111111111111111111 </div>
+</body>
+</html>
+--------------------- 
+作者：CYYYYYYYYYYYYYYY 
+来源：CSDN 
+原文：https://blog.csdn.net/yunyishang123/article/details/52232742 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+</html>

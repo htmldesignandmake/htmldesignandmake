@@ -1,0 +1,138 @@
+* {
+				margin: 0px;
+				padding: 0px;
+			}
+			.daohang {
+				width: 100%;
+				height: 150px;
+				background-image:url(../img/beijing.jpg);
+				margin: auto;
+				}
+				.daohang p{
+					position:relative;
+					top:50px;
+				/*	margin-left: 30%;*/
+				text-align: center;
+					font-size:28px;
+				}
+				.hero {
+				width: 100%;
+				margin:0 auto;
+				height: 130px;
+				float: left;
+				background-image:url(img/beijing.jpg);
+				position: relative;
+				z-index: 99;
+			}
+			.one{
+				width:75%;
+				float: left;
+	            position: relative;
+	            margin-left: 42%;
+	            margin-top: -40px;
+	           }
+			.clear{
+				clear:both;
+				}
+			a{
+				text-decoration: none;
+				}
+			ul,li{
+				list-style: none;
+				}
+			.one>li{
+			float: left;
+			width:15%;
+			text-align: center;
+			background: #ACDEAF;
+			padding:10px 0;
+			font-size:16px;
+			transition: .4s;
+			 border:2px solid #00FFFF;
+			}
+			.one>li a{
+				color:black;
+				}
+			.one>li:hover{
+				background: indianred;
+				display: block;
+				}
+		    .two{
+				display: none;
+				margin-top:10px;
+				}
+		    .one >li:hover .two{
+					display:block;
+					}
+            .two p{
+					padding:5px 0;
+				    transition: .4s;
+					cursor:pointer;
+					}
+			.two p:hover{
+				background: pink;
+				display:block;
+			}
+		  		}
+		
+			.two >li a{
+				color: black;
+				
+			}
+			.two>p a{
+				color: black;
+				}
+              .banner img{
+					width:100%;
+					position:relative;
+					margin-top:-100px;
+					}
+				.jieshao{
+					width:100%;
+					height:1500px;
+					background-color: bisque;
+				}
+				.jie{
+					width:100%;
+					height:auto;
+					background-color: bisque;
+				}
+				.jieshao2{
+				width:60%;
+				margin:0 auto;
+			    height:auto;
+			    position: relative;
+			    top:-170px;	
+			    float:left;
+			    border:2px solid black;
+			    font-family: "微软雅黑";
+			    font-size: 16px;
+			    color: black;
+			    line-height: 200%;
+			    padding-left: 2%;
+			    padding-right: 2%;
+			    padding-top: 2%;
+			    padding-bottom: 2%;
+			    margin-left: 35.5%;
+			}
+			.jieshao2 li{
+				list-style: none;
+			}
+			.ti img{
+				background: white;
+				width:100%
+			}
+			.gif img{
+				width:30%;
+				position: relative;
+				top:450px;
+				margin-left: 2.5%;
+			}
+			.gif p{
+				font-size:18px;
+			}
+			.jieshao p{
+				position:relative;
+				top:390px;
+				margin-left: 3%;
+			}

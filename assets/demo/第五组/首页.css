@@ -1,0 +1,59 @@
+*{
+	margin: 0PX;
+	padding: 0PX;
+}
+.banner{
+	width: 100%;
+	height: 100px;
+	background-color: #ab1919;
+	font-family: ;
+	font-size: 30px;
+	position: fixed;
+}
+.banner img{
+	width: 90px;
+	height: 80px;
+}
+.banner p{
+	float: left;
+	position: fixed;
+	top: 25px;
+	left:100px;
+	color: #f9f2f2;
+	font-size: 60px;
+}
+.xiala ul{
+	position: fixed;
+	top: 50px;
+	left: 400px;
+	color:black;
+	
+}
+.xiala li{
+	float: left;
+	list-style: none;
+	padding-left: 17px;
+	font-size: 30px;
+}
+.xiala li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+.xiala li:hover{
+	color: black;
+}
+.xiala p{
+	display: none;
+	font-size: 20px;
+}
+.xiala li:hover p{
+	display: block;
+}
+.xiala li p a{
+	color: black;
+}
+.flash{
+	position: absolute;
+	top:180px;
+}
+

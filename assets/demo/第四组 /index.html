@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	</head>
+	<body>
+		<header>
+			<span class="logo">
+				聚合志远人力资源有限公司
+			</span>
+			<ul class="menu_ul" id="cd">
+				<li class="menu_li"><a href="index.html" id="shouye">首页</a></li>
+				<li class="menu_li" ><a href="二级/二级、企业文化.html">企业文化</a></li>
+				<li class="menu_li menu_li_ys" ><a href="guanyu/qiuzhi.html" id="qiuzhi">个人求职</a></li>
+				<li class="menu_li menu_li_ys" ><a href="guanyu/zhaoping.html" id="zhaoping">企业招聘</a></li>
+				<li class="menu_li menu_li_ys" ><a href="现场招聘.html">现场招聘</a></li>
+				<li class="menu_li menu_li_ys" ><a href="校园招聘.html">校园招聘</a></li>
+				<li class="menu_li menu_li_ys" id="name" style="display: none;"><a id="dltc" href=""></a></li>
+			</ul>
+		</header>
+		<div class="nr">
+			<img src="img/banner.jpg" class="nr_img"/>
+			
+			<p class="menufont1">引领中国人力资本新发展</p>
+			<div class="zj">
+				<div>
+					<img src="img/soft01_right.png" class="zj_img"/>
+				</div>
+				<div>
+					<ul class="rul">
+						<li class="rli">
+							<p>组织发展</p>
+							<p>组织能力调研、敬业度调研、企业文化诊断、离职调研、人才盘点</p>
+						</li>
+						<li class="rli">
+							<p>人力发展</p>
+							<p>能力与技能管理、360反馈与继任、职业生涯与继任、全面绩效管理、调薪</p>
+						</li>
+						<li class="rli">
+							<p>人才获取</p>
+							<p>渠道整合、人岗匹配、智能报表、流程管理、录用测评、简历筛选</p>
+						</li>
+						<li class="rli">
+							<p>核心人事</p>
+							<p>人事信息、组织架构、休假管理、员工自助、合同管理、公出管理、薪酬福利</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="foot_div">
+			<ul>
+				<li>关于</li>
+				<li><a href="guanyu/guanyu.html" id="guanyu">关于企业</a></li>
+				<li><a href="二级/二级公司详情.html">企业详情</a></li>
+				<li><a href="guanyu/zhaoxian.html" id="zxns">招贤纳士</a></li>
+				<li><a href="guanyu/women.html" id="lianxi">联系我们</a></li>
+			</ul>
+			<ul>
+				<li><a href="guanyu/about.html" id="yewu">业务介绍</a></li>
+				<li>公司软件</li>
+				<li>学习发展</li>
+				<li>人才发展</li>
+			</ul>
+			<ul>
+				<li>公司动态</li>
+				<li>前沿咨讯</li>
+				<li><a href="二级/二级、合作案例.html">合作案例</a></li>
+				<li>公司动态</li>
+			</ul>
+			</div>
+		</footer>
+		<script language="javascript" type="text/javascript">
+			var namevalue=null;
+			namevalue=window.location.search.split("=")[1];
+			if(namevalue!=null&&namevalue!=""&&namevalue!=undefined){
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML=decodeURI(namevalue);
+				dltc .setAttribute("href", "login.html");
+				document.getElementById("name").style.display='inline';
+				document.getElementById("shouye").setAttribute("href","index.html?account="+decodeURI(namevalue));
+				document.getElementById("qiuzhi").setAttribute("href","guanyu/qiuzhi.html?account="+decodeURI(namevalue));
+				document.getElementById("zhaoping").setAttribute("href","guanyu/zhaoping.html?account="+decodeURI(namevalue));
+				document.getElementById("guanyu").setAttribute("href","guanyu/guanyu.html?account="+decodeURI(namevalue));
+				document.getElementById("zxns").setAttribute("href","guanyu/zhaoxian.html?account="+decodeURI(namevalue));
+				document.getElementById("lianxi").setAttribute("href","guanyu/women.html?account="+decodeURI(namevalue));
+				document.getElementById("yewu").setAttribute("href","guanyu/about.html?account="+decodeURI(namevalue));
+			}else{
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML="登录";
+				dltc .setAttribute("href", "login.html");
+				document.getElementById("name").style.display='inline';
+			}
+		</script>
+	</body>
+</html>

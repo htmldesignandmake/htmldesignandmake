@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.box{
+	width: 1366px;
+	height:768px;
+	opacity: 0.5;
+	background-image: url(九九九.jpg);
+	background-size:100% 100%;	
+}
+.bigbox{
+	width: 1366px;
+	height: 768px;
+}
+.tupian img{
+	width: 500px;
+	height:400px;
+	position: absolute;
+	left: 66px;
+	top: 48px;
+}
+.bigger{
+	width: 700px;
+	height: 400px;
+	position: absolute;
+	left:600px ;
+	top: 48px;
+}
+.wenzi{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.ull ul{
+	width: 700px;
+}
+.ull li{
+    width: 200px;
+    height: 20px;
+	float: left;
+	list-style: none;
+	
+}
+
+.ull{
+	position: absolute;
+	top: 170px;
+	font-family: "微软雅黑" ;
+	font-size: 20px;
+}
+.wenzi2{
+	position: absolute;	
+	top: 200px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.buy li{
+	margin: 10px;
+	 width: 200px;
+    height: 30px;
+	float: left;
+	list-style: none;
+	border: 2px solid red;
+	background-color: #FF0000;
+	text-align: center;
+}
+.buy a{
+	color: black;
+	font-family: "微软雅黑";
+	font-size:25px ;
+	text-decoration: none;
+}
+.buy{
+	position: absolute;	
+	top: 350px;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.one{
+	font-family: "微软雅黑";
+	font-size:20px;
+	float: left;
+	width: 1366px;
+	height: 300px;	
+	position: absolute;
+	left: 66px;
+	top: 468px;
+}
+.one img{
+	width: 250px;height: 250px;float: left;
+	}
+.ones{
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	left: 66px;
+}
+.two{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	left: 326px;
+	top: 0px;
+	float: left;
+}
+
+.three{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	left: 586px;	
+	top: 0px;
+}
+.four{
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	left: 846px;
+	top: 0px;
+}
+.one a{
+	text-decoration: none;
+	color: black;
+	font-family: "微软雅黑";
+	font-size:25px ;
+}

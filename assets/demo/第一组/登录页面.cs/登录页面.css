@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+.box{
+	background-image: url(../登录页面.img/beijing.png);
+	width: 1366px;
+	height: 786px;
+	background-size: 100% 100%;
+	text-decoration: none;
+}
+.box3{
+	width: 500px;
+    height: 300px;
+	border: 2px solid gold;
+	position: absolute;
+	left: 30%;
+	top: 50%;
+	background-color: rgba(150,80,120,0.5);
+	text-align: center;
+	}
+.main{
+	width: 100%;
+}
+.main p{
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+}

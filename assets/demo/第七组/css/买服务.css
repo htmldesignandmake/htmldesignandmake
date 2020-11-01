@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.banner{
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	border: 2px solid white;
+}
+.nav a{
+	text-decoration:none;
+}
+.banner p{
+	font-size: 30px;
+	font-family: 楷体;
+	float: left;
+	margin-top: 30px;
+	
+}
+.banner img{
+	width: 100px;
+	height: 98px;
+	float: left;
+	margin-left: 15%;
+}
+.nav{
+	width: 100%;
+	height: 30px;
+	background-color: gray;
+}
+.nav li{
+	margin-top: 1px;
+	float: left;
+	text-align: center;
+	width: 14%;
+	list-style: none;
+	font-size: 25px;
+	font-family: 宋体;
+	/*border: 2px solid white;*/
+}
+.main{
+	border: 2px solid white;
+	width: 80%;
+	height: 300px;
+}
+.main img{
+	width: 100%;
+	height: 300px;
+	border: 2px solid white;
+	margin-left: 13%;
+}
+.now{
+	margin-top: 20px;
+	
+	margin-left: 13.5%;
+	font-size: 25px;
+}
+.fuwu{
+	width: 104%;
+	margin-left: 9%;
+	margin-top: 30px;
+}
+.fu{
+	width: 30%;
+	height: 200px;
+	float:left;
+	margin-right: 2%;
+	margin-top: 30px;
+}
+.fu img{
+	width: 100%;
+	height: 100%;
+	border: 2px solid white;
+}
+.wu{
+	width: 63%;
+	height: 200px;
+	background-color: #a7d5f8;
+	margin-top: 30px;
+	
+	float:left;
+    border: 2px solid bisque;
+    font-family: "楷体";
+    font-size: 20px;
+    margin-left: 5%;
+	}
+.wu p{
+	margin-left: 50px;
+	margin-top: 3px;
+	font-size: 30px;
+}
+.wu a{
+	text-decoration:none;
+}
+.wu h5{
+	margin-left: 15%;
+	color: red;
+}
+.lxwm{
+	width: 125%;
+	height: 150px;
+	background-color: gray;
+	float: left;
+	border: 2px solid white;
+	font-family: "楷体";
+}
+.lxwm h2{
+	margin-left: 70px;
+	font-family: "楷体";
+	font-size: 20px;
+}

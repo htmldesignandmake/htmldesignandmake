@@ -1,0 +1,52 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-image:url(../img/u=4049222034,3053761472&fm=26&gp=0.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-attachment: fixed;
+}
+.content{
+width: 100%;
+}
+.content p{
+float: left;
+width: 50px;
+font-family: "微软雅黑";
+margin-left:12%;
+margin-top:10px;
+
+
+}
+.box{
+border: 2px solid white;
+background-color: gainsboro;
+background-color:rgba(200,200,200,0.5);
+position: absolute;
+top: 30%;
+left: 30%;
+width: 40%;
+height: 40%;
+}
+.content input[type="text"],
+.content input[type="password"]{
+width:50%;
+font-size: 20px;
+text-align: center;
+margin-top:5px;
+margin-left: 5%;
+
+}
+.content input[type=submit]{
+width: 25%;
+height: 30px;
+font-family: "微软雅黑";
+font-size:20px;
+background-color:orange;
+margin-top: 40px;
+margin-left: 37%;
+text-align: center;
+}
+

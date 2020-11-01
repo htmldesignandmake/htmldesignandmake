@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+					*{
+						margin: 0;
+						padding: 0;
+					}
+					body{
+						background-image: url(img/t010db80d94b8392233.jpg);
+						background-repeat: no-repeat;
+						background-size: 100% 100%;
+						background-attachment: fixed;
+					}
+					.content{
+						width:100%;
+						height: 50px;
+						line-height: 50px;
+					}
+					.zi{
+						width: 100px;
+						
+					}
+					.content p{
+						float:left;
+						width:100px;
+					}
+					.box{
+						border:2px solid rgb(22,72,121);
+						background: rgba(180,183,179,0.6);			
+						position:absolute;
+						top:33%;
+						left:35%;
+						width:30%;
+						height:40%;
+					}
+					.content input[type="text"],
+					.content input[type="password"],
+					.content input[type="tel"]{
+						width:50%;
+						font-size:18px;
+						margin-left:8%;
+					}
+					.content input[type="button"]{
+						width:30%;
+						height:30px;
+						font-size:20px;
+						background-color:peachpuff;
+						margin-top:20px;
+						margin-left:35%;
+					}
+					.wjmm{
+						float: left;
+						text-decoration: none;
+						color: rgb(0,0,0);
+					}
+					.xyh{
+						float: right;
+						text-decoration: none;
+						color: rgb(0,0,0);
+						
+					}
+					i{
+						font-size: 12px;
+					}
+					.wjmm{
+						float: left;
+						text-decoration: none;
+						color: rgb(0,0,0);
+					}
+					.xyh{
+						float: right;
+						text-decoration: none;
+						color: rgb(0,0,0);
+					}
+					
+				</style>
+	</head>
+	<body onload=document.zc.account.focus()>
+		<form name="zc">
+			<div class="box">
+				<h1 style="padding-top: 15px;text-align:center;font-family：Microsoft yahei;font-size:45px;top:20px;">Personal Register</h1>
+				<div class="content">
+					<p class="zi">账号</p><input type="text"name="account" id="account"><i id="zh" style="display: none;"></i></div>
+				<div class="content">
+					<p class="zi">密码</p><input type="password"name="password" id="password"><i id="mm" style="display: none;"></i></div>
+				<div class="content">
+					<p class="zi">确认密码</p><input type="password"name="password" id="confpassword"><i id="qrmm" style="display: none;"></i></div>
+				<div class="content">
+					<p class="zi">联系方式</p><input type="tel" name="telephone" id="phone"></div>
+				<div class="content"><input type="button"value="注册" id="register"></div>
+				<div class="content"><a href="login.html" class="wjmm">登陆<a/><a href="enterpriseRegister.html" class="xyh">企业注册</a></div>
+			</div>
+		</form>
+		<script language="javascript" type="text/javascript">
+			var tj=document.getElementById("register");
+			var account=document.getElementById("account");
+			var password=document.getElementById("password");
+			var confpassword=document.getElementById("confpassword");
+			var zh=document.getElementById("zh");
+			var mm=document.getElementById("mm");
+			var qrmm=document.getElementById("qrmm");
+			account.onblur=function(){
+				var accountvalue=account.value;
+				if(accountvalue==""||accountvalue==null){
+					zh.innerHTML="请输入账号";
+					zh.style.color = 'red';
+					zh.style.display='inline';
+					return;
+				}
+			};
+			password.onblur=function(){
+				var passwordvalue=password.value;
+				if(passwordvalue==""||passwordvalue==null){
+					mm.innerHTML="请输入密码";
+					mm.style.color = 'red';
+					mm.style.display='inline';
+					return;
+				}
+			};
+			confpassword.onblur=function(){
+				var passwordvalue=password.value;
+				var confpasswordvalue=confpassword.value;
+				if(confpasswordvalue==""||confpasswordvalue==null){
+					qrmm.innerHTML="请输入确认密码";
+					qrmm.style.color = 'red';
+					qrmm.style.display='inline';
+					return;
+				}else if(confpasswordvalue!=passwordvalue){
+					qrmm.innerHTML="两次密码输入不一致";
+					qrmm.style.color = 'red';
+					qrmm.style.display='inline';
+					return;
+				}
+			};
+			tj.addEventListener("click",function(){		
+				var accountvalue=account.value;
+				var passwordvalue=password.value;
+				var confpasswordvalue=confpassword.value;
+				if(accountvalue==""||accountvalue==null){
+					zh.innerHTML="请输入账号";
+					zh.style.color = 'red';
+					zh.style.display='inline';
+					return;
+				}
+				if(passwordvalue==""||passwordvalue==null){
+					mm.innerHTML="请输入密码";
+					mm.style.color = 'red';
+					mm.style.display='inline';
+					return;
+				}
+				if(confpasswordvalue==""||confpasswordvalue==null){
+					qrmm.innerHTML="请输入确认密码";
+					qrmm.style.color = 'red';
+					qrmm.style.display='inline';
+					return;
+				}else if(confpasswordvalue!=passwordvalue){
+					qrmm.innerHTML="两次密码输入不一致";
+					qrmm.style.color = 'red';
+					qrmm.style.display='inline';
+					return;
+				}
+				window.open("index.html?account="+account.value);
+			})
+			account.onfocus=function(){
+				zh.style.display='none';
+			}
+			password.onfocus=function(){
+				mm.style.display='none';
+			}
+			confpassword.onfocus=function(){
+				qrmm.style.display='none';
+			}
+			
+		</script>
+	</body>
+<html>

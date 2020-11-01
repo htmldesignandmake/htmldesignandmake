@@ -1,0 +1,25 @@
+{	margin: 0;
+	padding: 0;
+}
+.table {
+	height: 109px;
+	width: 100%;
+	position: absolute;
+	left: auto;
+	top: 200px;
+}
+
+.table a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: "微软雅黑";
+	}
+
+.photo{
+	height: 200px;
+	width: 100%;
+    position: absolute;
+	top:59px ;
+}
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background-image: url(img1/img2/zhuce.jpg);
+background-repeat: no-repeat;
+background-size:100% 100%;
+}
+.box{
+width:450px;
+height: 350px;
+border:2px solid  coral;
+background-color:gray;
+opacity: 0.7;
+margin: 200px auto;
+}
+.from{
+width:400px;
+height:300px;
+}
+h1{
+text-align: center;
+color:white;
+font-size: 50px;
+margin-top:20px;
+}
+.leg{
+width:400px;
+height: 230px;
+line-height: 60px;
+margin:auto;
+}
+.leg input[type="text"],input[type="password"]{
+position: absolute;
+margin-left:70px;
+margin-top: 20px;
+   width:199px;
+   border-style: groove;
+   
+}
+.leg input[type="submit"]{
+position: absolute;
+margin-left:130px;
+margin-top:10px;
+font-size: 18px;
+/* border:2px solid; */
+box-shadow: black 5px 5px 5px ;
+width:70px;
+}
+.sub{
+	position: absolute;
+margin-left:120px;
+}
+img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	margin-left: 43%;
+	margin-top:-200px;
+	
+}
+</style>
+</head>
+<body>
+	<img src="img/7.png" alt="" />
+<div class="box">
+<div class="form">
+<h1>LOGIH</h1>
+<from>
+<fieldset class="leg">
+<legend>用户登录/uer.pwd</legend>
+&nbsp;&nbsp;用户名:<input type="text" value="请输入" disabled="disabled"/><button style="margin-left: 276px;">修改</button><br />
+&nbsp;&nbsp;密&nbsp;&nbsp;&nbsp;&nbsp;码:<input type="password" /><br />
+<input type="submit" value="登录" id="login"/><div class="sub"><a href="register.html"><input type="submit" value="注册" /></a></div>
+</fieldset>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+	//需求：点击修改button，取消输入框的禁用属性
+	//1、获取事件源和相关元素
+	//2、绑定事件源；
+	//3、书写事件驱动程序。
+	
+	//1、获取事件源和相关元素；
+	var but=document.getElementsByTagName("button")[0];
+	var inp1=document.getElementsByTagName("input")[0];
+	var inp2=document.getElementsByTagName("input")[1];
+	//2、绑定事件源；
+	
+	but.onclick=function(){
+		//3、书写事件驱动程序。
+		inp1.disabled = false;
+	}
+	inp1.onfocus=function(){
+		if(inp1.value==="请输入"){
+			inp1.value=""
+		}
+	}
+	inp1.onblur=function(){
+		if(inp1.value===""){
+		inp1.value="请输入";
+		}
+	}
+	//需求：点击修改登录button，判断用户名级密码正确后，跳到首页；
+	//1、获取事件源和相关元素
+      var log = document.getElementById("login");
+      var uname = "第六小组",pwd = "123456";
+	//2、绑定事件源；；
+	log.onclick = function(){
+		//3、书写事件驱动程序。
+		if(inp1.value === uname && inp2.value === pwd){
+			window.location.href = "index.html";
+		}
+		else{
+			alert("用户名或密码错误！！！请重新输入");
+		}
+	}
+	
+</script>
+</body>
+</html>

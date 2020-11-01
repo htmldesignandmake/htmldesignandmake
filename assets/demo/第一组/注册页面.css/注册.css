@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+body{
+	background-image:url(背景.jpg);
+	background-size:100% 100% ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.box{
+	width: 40%;
+	height: 40%;
+	text-align: center;
+	border: 2px solid red;
+	background-color:rgba(150,80,120,0.5);
+	position: absolute;
+	left: 30%;
+	top: 30%;
+}
+.content{
+	width: 100%;
+}
+.content p{
+	width: 30%;
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+.cont a{
+	background-color: cadetblue;
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+}
+.content input[type="text"],
+.content input[type="password"]{width: 60%;}
+.content input[type="submit"]{
+	width: 40%;
+	height: 30%;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	background-color: peachpuff;
+	s
+}

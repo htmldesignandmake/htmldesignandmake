@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.table {
+	height: 109px;
+	width: 100%;
+	position: absolute;
+	left: auto;
+	top: 200px;
+}
+
+.table a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: "微软雅黑";
+}
+
+.photo {
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	top: 59px;
+	float: left;
+}
+.banner{
+	width: 1400px;
+	height: 100px;
+	background-color: white;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	color: red;
+}
+.banner p{
+	position: relative;
+	top:25px;
+}
+.bannerq{
+	float:right;
+	top: 20px;
+	font-size: 25px;
+	color: gray;
+}
+.nav{
+	width: 1400px;
+	height: 60px;
+	background-color: gray;
+}
+.nav li{
+	color: whitesmoke;
+	list-style: none;
+	float: left;
+	font-size: 35px;
+	width: 17%;
+	text-align: center;	
+}
+.word{
+	width: 100%;
+	height: 100%;
+	font-family: garamond;
+	size: 70px;
+	background-color: burlywood;
+}
+.word p{
+	position: relative;
+	top: 20px;
+	font-size: 20px;
+	color: black;
+	font-family: "微软雅黑";
+	background-color: burlywood;
+	
+}
+.cc{
+	margin-left: 8px;
+	width: 100%;
+	height: 120px;
+	background-color: darkslateblue
+}
+.cc li{
+	font-size: 18x;
+	color: white;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	
+}
+.cc img{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 80px;
+	top: 750px;
+}
+

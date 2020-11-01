@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.zuo img{
+	width: 300px;
+	height: 350px;
+	
+}
+.you{
+	text-align: center;
+	position: absolute;
+	left: 350px;
+	top: 10px;
+	
+}
+.you img{
+	
+	float: left;
+}   
+.picture{
+	text-align: center;
+	position: absolute;
+	left: 350px;
+	top: 600px;
+}
+.nav {
+	height: 100px;
+	position: absolute;
+	left: 50px;
+	
+}
+.nav li{
+	height: 100%;
+	width: 100%;
+	list-style: none;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	
+}

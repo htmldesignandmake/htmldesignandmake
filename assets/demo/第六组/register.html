@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 100%;
+				height: 700px;
+				background-image: url(img1/img2/666.jpg);
+				background-size: 100% 100%;
+			}
+			.box1{
+				float: left;
+				position: fixed;
+				margin-top: 150px;
+				width: 400px;
+				height: 200px;
+				margin-left: 470px;
+			}
+			.box{
+				position: fixed;
+				margin-top: 100px;
+				margin-left: 400px;
+				width: 400px;
+				height: 400px;
+				background-color: gray;
+				opacity: 0.5;
+				border: 2px solid skyblue;
+			}
+			.waring{
+				border: 2px solid red;
+			}
+			.ture{
+				border: 2px solid green;
+			}
+			input[type="submit"]{
+				/*position: absolute;*/
+				margin-left: 187px;
+				font-size: 20px;
+			}
+			.hite{
+				display: none;
+			}
+			.show{
+				position: absolute;
+				margin-top: -20px ;
+				margin-left: 50px ;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				color: #696969;
+				background-color: greenyellow;
+				display: block;
+			}
+			.tishi{
+				position: absolute;
+				margin-top: -20px ;
+				margin-left: 50px ;
+				font-family: "微软雅黑";
+				font-size: 14px;
+				color: #696969;
+				background-color: greenyellow;
+				display: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box1">
+			<form action="#" class="leng">
+				
+				
+				呢&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：<input type="text" name="uername" onblur="fn(this)" ><br/><br/>
+				<!--<div id="class1"></div>-->
+				密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="pwd" onblur="fn(this)" id="m"><br/><br/>
+				<!--<div id="class2"></div>-->
+				确认密码：<input type="password" name="aginpwd" id="ts"><br/><br/>
+				<div id="pass"></div>
+				<input type="submit" value="确认" />
+			</form>
+			<img src="img/7.png" alt="" width="200px"height="200px"style="margin-left: 40px;"/>
+		</div>
+		<script type="text/javascript">
+			//需求：当输入框的字符长度在6~10字符之间，输入框变蓝，反之变红；
+			//步骤：
+			//1、获取事件源级相关元素；
+			//2、绑定事件；
+			//3、书写事件驱动程序；
+			
+			
+			//1、获取事件源级相关元素；
+			var ts = document.getElementById("ts");
+			var m = document.getElementById("m");
+			var pass = document.getElementById("pass");
+			function fn(a){
+				if(a.value.length >= 6 && a.value.length <= 10){
+					a.className = "ture";
+				}
+				else{
+					a.className = "waring";
+					if(a.value.length !=0){
+					alert("您输入的字符数应在6-10字之间");
+					}
+				}
+			}
+			ts.onblur = function(){
+				if(m.value.length != ts.value.length){
+					alert("密码不一致");
+				}
+				else{
+					pass.innerHTML = "<p style='color: green;text-shadow: #00FFFF 2px 2px 2px;'align='center'>验证通过</p>"
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/erji.css" type="text/css"/>
+	</head>
+	<body>
+		<header>
+			<span class="logo">
+				聚和志远人力资源管理有限公司
+			</span>
+			<ul class="menu_ul">
+				<li class="menu_li"><a href="../index.html" id="shouye">首页</a></li>
+				<li class="menu_li" ><a href="../二级/二级、企业文化.html">企业文化</a></li>
+				<li class="menu_li menu_li_ys" ><a href="qiuzhi.html" id="qiuzhi">个人求职</a></li>
+				<li class="menu_li menu_li_ys" ><a href="zhaoping.html" id="zhaoping">企业招聘</a></li>
+				<li class="menu_li menu_li_ys" ><a href="../现场招聘.html">现场招聘</a></li>
+				<li class="menu_li menu_li_ys" ><a href="../校园招聘.html">校园招聘</a></li>
+				<li class="menu_li menu_li_ys" id="name" style="display: none;"><a id="dltc" href=""></a></li>
+			</ul>
+		</header>
+	<div class="nr">
+			<img src="img/banner.jpg" class="nr_img"/>
+			
+			<p class="menufont1">引领中国人力资本新发展</p>
+	</div>
+	
+	
+		<div class="qywz">
+		  <div class="qyleft">
+		    <p>&nbsp;</p>
+		    <p><img src="img/184_240_1.png" width="184" height="240"></p>
+		    <p><img src="img/184_184_1.jpg" width="184" height="184"></p>
+		  </div>
+		  
+		  <div class="qyright">
+		    <p>&nbsp;</p>
+		    <p>您现在的位置：网站首页&gt;企业招聘</p>
+		    <hr>
+			<div class="qy1">
+			<ul>
+			<li><img src="img/qy1.jpg" width="309" height="232"><br>
+			  霖杰硅胶制品有限公司<br>
+			  家具、家电、工艺品、玩具|50-200人<br>
+			  工程文员（包吃住）、外贸业务助理</li>
+		
+			
+			
+			  <li><img src="img/qy2.jpg" width="309" height="232"><br>
+			    商宝照明技术有限公司<br>
+			    电子、微电子技术、集成电路|50-200人<br>
+		      采购员、电商美工设计</li>
+				
+				  <li><img src="img/qy3.jpg" width="309" height="232"><br>
+				    富宝家居集团有限公司<br>
+				    家具、家电、工艺品、玩具|1000人以上<br>
+			      外贸跟单、绘图员、业务助理、</li>
+				
+				
+				  <li><img src="img/qy4.jpg" width="309" height="232"><br>
+				    新东联汽车贸易有限公司<br>
+				    汽车、摩托车及零配件|50-200人<br>
+			      会计、文员、服务顾问、汽车维修工、急招出纳、</li>
+				
+				
+				  <li><img src="img/qy5.jpg" width="309" height="232"><br>
+				    家盛物业服务有限公司<br>
+				    物业管理、商业中心|500-1000人<br>
+			      保安员（酒店）、客服主管（厚街）、前台文员</li>
+				
+				
+				  <li><img src="img/qy6.jpg" width="309" height="232"><br>
+				    百耐信科技有限公司<br>
+				    计算机软件|50-200人<br>
+			      电子工程师、工程助理、业务经理、美工设计</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<footer>
+			<div class="foot_div">
+			<ul>
+				<li>关于</li>
+				<li><a href="guanyu.html" id="guanyu">关于企业</a></li>
+				<li><a href="../二级/二级公司详情.html">企业详情</a></li>
+				<li><a href="zhaoxian.html" id="zxns">招贤纳士</a></li>
+				<li><a href="women.html" id="lianxi">联系我们</a></li>
+			</ul>
+			<ul>
+				<li><a href="about.html" id="yewu">业务介绍</a></li>
+				<li>公司软件</li>
+				<li>学习发展</li>
+				<li>人才发展</li>
+			</ul>
+			<ul>
+				<li>公司动态</li>
+				<li>前沿咨讯</li>
+				<li><a href="../二级/二级、合作案例.html">合作案例</a></li>
+				<li>公司动态</li>
+			</ul>
+			</div>
+		</footer>
+		<script language="javascript" type="text/javascript">
+			var namevalue=null;
+			namevalue=window.location.search.split("=")[1];
+			if(namevalue!=null&&namevalue!=""&&namevalue!=undefined){
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML=decodeURI(namevalue);
+				dltc .setAttribute("href", "../login.html");
+				document.getElementById("name").style.display='inline';
+				document.getElementById("shouye").setAttribute("href","../index.html?account="+decodeURI(namevalue));
+				document.getElementById("qiuzhi").setAttribute("href","qiuzhi.html?account="+decodeURI(namevalue));
+				document.getElementById("zhaoping").setAttribute("href","zhaoping.html?account="+decodeURI(namevalue));
+				document.getElementById("guanyu").setAttribute("href","guanyu.html?account="+decodeURI(namevalue));
+				document.getElementById("zxns").setAttribute("href","zhaoxian.html?account="+decodeURI(namevalue));
+				document.getElementById("lianxi").setAttribute("href","women.html?account="+decodeURI(namevalue));
+				document.getElementById("yewu").setAttribute("href","about.html?account="+decodeURI(namevalue));
+			}else{
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML="登录";
+				dltc .setAttribute("href", "../login.html");
+				document.getElementById("name").style.display='inline';
+			}
+		</script>
+	</body>
+</html>

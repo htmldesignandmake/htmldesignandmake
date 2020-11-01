@@ -1,0 +1,73 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	width: 100%;
+	height: 160px;
+	background-color: gainsboro;
+}
+.banner img{
+	width: 30%;
+	height: 160px;
+}
+.nav{
+	width:100%;
+	height:50px;
+	background-color:ghostwhite;
+}
+.nav li{
+	float: left;
+	width: 16.6%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 25px;
+	list-style: none;
+}
+.nav a{
+	text-decoration: none;
+	color: black;
+}
+.nav li:hover{
+	border: 3px solid green;
+}
+.asd{
+	float: left;
+	width: 25%;
+	height: 600px;
+}
+.asd img{
+	height:100% ;
+	width:100% ;
+}
+.jj{
+	float: left;
+	width: 70%;
+	height: 600px;
+	position: relative;
+	top:100px;
+	left: 40px;
+	line-height: 50px;
+}
+.jj h1{
+	text-align: center;
+	margin: auto
+}
+.jj p{
+	font-size: 24px;
+}
+.dizhi{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 15%;
+	height: 20px;
+	float: left;
+	margin-left: 10%;
+	list-style: none;
+	margin-top: 5%;
+}
+.dizhi a{
+	text-decoration: none;
+	color: black;
+}

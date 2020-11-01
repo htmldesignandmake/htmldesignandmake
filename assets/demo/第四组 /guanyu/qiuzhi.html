@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/erji.css" type="text/css"/>
+	</head>
+	<body>
+		<header>
+			<span class="logo">
+				聚和志远人力资源管理有限公司
+			</span>
+			<ul class="menu_ul">
+				<li class="menu_li"><a href="../index.html" id="shouye">首页</a></li>
+				<li class="menu_li" ><a href="../二级/二级、企业文化.html" id="wenhua">企业文化</a></li>
+				<li class="menu_li menu_li_ys" ><a href="qiuzhi.html" id="qiuzhi">个人求职</a></li>
+				<li class="menu_li menu_li_ys" ><a href="zhaoping.html" id="zhaoping">企业招聘</a></li>
+				<li class="menu_li menu_li_ys" ><a href="../现场招聘.html">现场招聘</a></li>
+				<li class="menu_li menu_li_ys" ><a href="../校园招聘.html">校园招聘</a></li>
+				<li class="menu_li menu_li_ys" id="name" style="display: none;"><a id="dltc" href=""></a></li>
+			</ul>
+		</header>
+	<div class="nr">
+			<img src="img/banner.jpg" class="nr_img"/>
+			
+			<p class="menufont1">引领中国人力资本新发展</p>
+	</div>
+	
+	
+		<div class="grwz">
+		  <div class="grleft">
+		    <p>&nbsp;</p>
+		    <p><img src="img/184_240_1.png" width="184" height="240"></p>
+		    <p><img src="img/184_184_1.jpg" width="184" height="184"></p>
+		  </div>
+		  
+		  <div class="gyright">
+		    <p>&nbsp;</p>
+		    <p>您现在的位置：网站首页&gt;个人求职</p>
+		    <hr>
+		    <strong>最新职位</strong>
+		    <ul>
+			<li><strong>自动化机构设计工程师 </strong><br>
+			  深圳市首熙机械设备有限公司         | 深圳|本科以上|8年经验|¥12-18K| 21分钟前刷新<br>
+			  岗位职责： 1.机器人应用机构设计. 2.非标自动化设备机构设计. 3.自动化设备及机器人应用设备调试指导. 4.团队培育. 5.主管交办的其他工作任务. 任职资格： 1.重点大学本科毕业. 2.非标自动化、机器人应用领域机构设计8年以上工作经验. 3.过往独立主导过项目设计. 4.对自动化行业有极...<br>
+			  应聘 收藏</li>
+			
+			<li><strong>资源开发采购 </strong><br>
+			  深圳市北鼎晶辉科技股份有限公司     | 深圳|本科以上|7年经验|¥10-15K| 21分钟前刷新<br>
+			  工作职责： 1. 独立负责NPI项目导入。作为项目Leader管理推进相关采购工作。 2. 配合项目需求，对新物料品类做出快速的市场调查、区域供应基础、竞争格局分析，搜索并评估供应商资源。为项目开发提供匹配有效的供应资源。 3. 负责询比价、审样，成本分析，可采购性，交付稳定性分析。 4. 负责供应商评审，合同...<br>
+			  应聘 收藏</li>
+		    </ul> </div>
+		</div>
+		<footer style="margin-top: -28px;">
+			<div class="foot_div">
+			<ul>
+				<li>关于</li>
+				<li><a href="guanyu.html" id="guanyu">关于企业</a></li>
+				<li><a href="../二级/二级公司详情.html">企业详情</a></li>
+				<li><a href="zhaoxian.html" id="zxns">招贤纳士</a></li>
+				<li><a href="women.html" id="lianxi">联系我们</a></li>
+			</ul>
+			<ul>
+				<li><a href="about.html" id="yewu">业务介绍</a></li>
+				<li>公司软件</li>
+				<li>学习发展</li>
+				<li>人才发展</li>
+			</ul>
+			<ul>
+				<li>公司动态</li>
+				<li>前沿咨讯</li>
+				<li><a href="../二级/二级、合作案例.html">合作案例</a></li>
+				<li>公司动态</li>
+			</ul>
+			</div>
+		</footer>
+		<script language="javascript" type="text/javascript">
+			var namevalue=null;
+			namevalue=window.location.search.split("=")[1];
+			if(namevalue!=null&&namevalue!=""&&namevalue!=undefined){
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML=decodeURI(namevalue);
+				dltc .setAttribute("href", "../login.html");
+				document.getElementById("name").style.display='inline';
+				document.getElementById("shouye").setAttribute("href","../index.html?account="+decodeURI(namevalue));
+				document.getElementById("qiuzhi").setAttribute("href","qiuzhi.html?account="+decodeURI(namevalue));
+				document.getElementById("zhaoping").setAttribute("href","zhaoping.html?account="+decodeURI(namevalue));
+				document.getElementById("guanyu").setAttribute("href","guanyu.html?account="+decodeURI(namevalue));
+				document.getElementById("zxns").setAttribute("href","zhaoxian.html?account="+decodeURI(namevalue));
+				document.getElementById("lianxi").setAttribute("href","women.html?account="+decodeURI(namevalue));
+				document.getElementById("yewu").setAttribute("href","about.html?account="+decodeURI(namevalue));
+			}else{
+				var dltc=document.getElementById("dltc");
+				dltc.innerHTML="登录";
+				dltc .setAttribute("href", "../login.html");
+				document.getElementById("name").style.display='inline';
+			}
+		</script>
+	</body>
+</html>

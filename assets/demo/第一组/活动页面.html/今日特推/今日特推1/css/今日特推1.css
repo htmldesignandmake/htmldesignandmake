@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+	padding: 0px;
+}
+.bg{
+	width:1366px;
+	height: 768px;
+}
+.banner{
+	background-image:url(../img/导航栏8.jpg);
+	width:1366;
+	height: 80px;
+	position: fixed;
+}
+.nav>ul>li{
+	font-family:"微软雅黑";
+	font-size: 40px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	width: 220px;
+}
+.nav a{
+	text-decoration: none;
+	color:antiquewhite;
+}
+.nav a:hover{color:darkgreen}
+.box{width: 100%;
+     margin-left: auto;
+     border-top: 70px;
+}
+
+.main a{
+	font-family:"微软雅黑";
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+	color:white;
+}
+.flash img{
+	width: 1366px;
+	height: 400px;
+}

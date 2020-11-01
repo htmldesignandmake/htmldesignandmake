@@ -1,0 +1,87 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	width: 100%;
+	height: 160px;
+	background-color: gainsboro;
+}
+.banner img{
+	width: 30%;
+	height: 160px;
+}
+.nav{
+	width:100%;
+	height:55px;
+	background-color:ghostwhite;
+}
+.nav li{
+	float: left;
+	width: 16.6%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 25px;
+	list-style: none;
+}
+.nav a{
+	text-decoration: none;
+	color: black;
+}
+.nav li:hover{
+	border: 3px solid green;
+}
+.daohang{
+	width: 100%;
+	height: 55px;
+	background-color:lavenderblush;
+	border: 2px solid gainsboro;
+}
+.daohang p{
+	font-family: "微软雅黑";
+	font-size: 40px;
+	margin-left: 20px;
+}
+.flash{
+	background-color: antiquewhite;
+}
+.tupian{
+	width: 100%;
+	height:1000px;
+}
+.tupian img{
+	width: 45%;
+	float: left;
+	height: 100%;
+	margin-left: 3.3%;
+}
+.word{
+	width: 100%;
+	height: 150px;
+}
+.word p{
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: black;
+	width: 45%;
+	float: left;
+	margin-left: 3.3%;
+	border: 2px solid gainsboro;
+}
+.dizhi{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 15%;
+	height: 20px;
+	float: left;
+	margin-left: 10%;
+	list-style: none;
+	margin-top: 5%;
+}
+.dizhi a{
+	text-decoration: none;
+	color: black;
+}
+

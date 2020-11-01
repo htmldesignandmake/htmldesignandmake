@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+.table {
+	height: 109px;
+	width: 100%;
+	position: absolute;
+	left: auto;
+	top: 200px;
+}
+
+.table a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: "微软雅黑";
+}
+
+.photo {
+	height: 200px;
+	width: 100%;
+	position: absolute;
+	top: 59px;
+	float: left;
+}
+.s{
+	width: 1400px;
+	height: 100px;
+	background-color: white;
+	font-size: 35px;
+	font-family: "微软雅黑";
+	color: red;
+}
+.ss{background-color: white;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	color: black;
+	
+}
+.cc{
+	margin-left: 8px;
+	width: 100%;
+	height: 120px;
+	background-color: darkslateblue
+}
+.cc li{
+	font-size: 18x;
+	color: white;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	
+}
+.cc img{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 80px;
+	top: 400px;
+}
