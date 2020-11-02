@@ -5326,8 +5326,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   background: #333;
 }
 .singleSlide{
-  background-size: contain !important;
+  background-size: cover !important;
   background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 li.active {
   color: #ff5951;
