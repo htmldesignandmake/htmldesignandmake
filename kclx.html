@@ -231,6 +231,64 @@
     <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/index.js"></script>
     <script>
+      var p=[
+      "http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e5cef6387702299501822619/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dc57f58387702299502158555/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dd830da387702299502169843/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e5caf1387702299501822533/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dd8305a387702299502169807/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e909110387702299501722119/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e9090ed387702299501722107/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e908db6387702299501722089/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e908d8d387702299501722071/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dc57ad0387702299502158430/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dc572fc387702299502158289/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/13164794387702299501901961/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/030a80b4387702299501241685/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/030a73b3387702299501241369/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e53293387702299501821293/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e52db1387702299501821147/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dd786f7387702299502168166/coverBySnapshot_10_0.jpg",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0309f368387702299501240611/coverBySnapshot_10_0.jpg"
+      ]
+      var a=["http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e5cef6387702299501822619/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dc57f58387702299502158555/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dd830da387702299502169843/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e5caf1387702299501822533/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dd8305a387702299502169807/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e909110387702299501722119/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e9090ed387702299501722107/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e908db6387702299501722089/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0e908d8d387702299501722071/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dc57ad0387702299502158430/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dc572fc387702299502158289/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/13164794387702299501901961/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/030a80b4387702299501241685/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/030a73b3387702299501241369/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e53293387702299501821293/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/10e52db1387702299501821147/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/4dd786f7387702299502168166/v.f100030.mp4",
+"http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/0309f368387702299501240611/v.f100030.mp4"]
+var text=[
+"html文字相关元素",
+	"html图像元素",
+	"表格布局页面案例",
+	"表单与表格案例",
+	"编辑器的使用",
+	"Photoshop概述",
+	"用户界面和工具箱",
+	"修补工具",
+	"切片工具",
+	"渐变工具",
+	"DOM事件",
+	"CSS样式修改",
+	"DOM HTML",
+	"函数声明及调用",
+	"switch语句",
+	"JavaScript对象",
+	"js的输出",
+	"引入JavaScript",
+]
       new Vue({
         el: '#app',
         data: {
@@ -285,146 +343,14 @@
             '特色创新-改进方向途径',
             '特色创新-改进方向途径',
           ],
-          videos: [
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2aca35285890809286976909/v.f100020.mp4',
-              url: 'DOM HTML',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2aca35285890809286976909/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f313a05285890809286977077/v.f100020.mp4',
-              url: 'JavaScript对象',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f313a05285890809286977077/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31b775285890809286977221/v.f100020.mp4',
-              url: '引入JavaScript',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31b775285890809286977221/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31c665285890809286977299/v.f100020.mp4',
-              url: 'DOM事件',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f31c665285890809286977299/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f323bf5285890809286977409/v.f100020.mp4',
-              url: 'CSS样式修改',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f323bf5285890809286977409/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f328de5285890809286977570/v.f100020.mp4',
-              url: 'switch语句',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f328de5285890809286977570/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633bcdb15285890809272243666/v.f100020.mp4',
-              url: '函数声明及调用',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633bcdb15285890809272243666/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633c4c875285890809272244304/v.f100020.mp4',
-              url: 'js的输出',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633c4c875285890809272244304/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2a4de5285890809286976760/v.f100020.mp4',
-              url: 'html图像元素',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/93f2a4de5285890809286976760/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/v.f100020.mp4',
-              url: '表格布局页面案例',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/v.f100020.mp4',
-              url: '表单与表格案例',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633ac18d5285890809272241952/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27045285890809272242006/v.f100020.mp4',
-              url: '编辑器的使用',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27045285890809272242006/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27425285890809272242022/v.f100020.mp4',
-              url: 'html文字相关元素',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b27425285890809272242022/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b280d5285890809272242087/v.f100020.mp4',
-              url: '修补工具',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b280d5285890809272242087/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b475285890809272242108/v.f100020.mp4',
-              url: '渐变工具',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b475285890809272242108/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b685285890809272242118/v.f100020.mp4',
-              url: '切片工具',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b685285890809272242118/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b8a5285890809272242129/v.f100020.mp4',
-              url: '用户界面和工具箱',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2b8a5285890809272242129/coverBySnapshot_10_0.jpg',
-            },
-            {
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2bc65285890809272242143/v.f100020.mp4',
-              url: 'Photoshop概述',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/633b2bc65285890809272242143/coverBySnapshot_10_0.jpg',
-            },{
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118765285890809324828826/v.f100020.mp4',
-              url: 'yesea.cn域名设计',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118765285890809324828826/coverBySnapshot_10_0.jpg',
-            },{
-              text:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118525285890809324828813/v.f100020.mp4',
-              url: '域名设计',
-              p:
-                'http://1255538920.vod2.myqcloud.com/101d01d2vodtranscq1255538920/e24118525285890809324828813/coverBySnapshot_10_0.jpg',
-            },
-          ],
+          p:p,
+          a:a,
+          text:text,
+          videos: text.map((i,index)=>({
+              text:a[index],
+              p:p[index],
+              url:text[index],
+            })),
         },
         methods: {
           open(item) {
